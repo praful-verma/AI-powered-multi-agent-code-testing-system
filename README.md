@@ -74,6 +74,3 @@ The current implementation is designed for MERN repositories. The overall workfl
 
 Each test receives `confidence_score` and `confidence_details` in Excel. The score considers execution status, runner score, static validation, deterministic repairs, coverage, and unresolved dependency hints. Clean passing tests with validation and coverage score highest; repaired or failed tests are penalized and explained in `runs/confidence_report.md`.
 
-## Redesign Plan
-
-See [docs/ARCHITECTURE_REDESIGN_PLAN.md](docs/ARCHITECTURE_REDESIGN_PLAN.md) for the detailed plan to evolve this repository-aware testing framework with deterministic repository analysis, mock planning, templates, validation, repair, failure categorization, confidence scoring, and future support for additional technology stacks.
