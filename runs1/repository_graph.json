@@ -1,0 +1,3026 @@
+{
+  "root_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app",
+  "stack": "mern",
+  "test_framework": "jest",
+  "files": [
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\server.js",
+      "relative_path": "backend/server.js",
+      "language": "js",
+      "stack_area": "backend",
+      "file_role": "utility",
+      "imports": [
+        {
+          "source": "dotenv",
+          "bindings": [],
+          "line": 1,
+          "import_kind": "side_effect",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "express",
+          "bindings": [
+            "express"
+          ],
+          "line": 2,
+          "import_kind": "require",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "cors",
+          "bindings": [
+            "cors"
+          ],
+          "line": 3,
+          "import_kind": "require",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "./config/db",
+          "bindings": [
+            "connectDB"
+          ],
+          "line": 4,
+          "import_kind": "require",
+          "resolved_path": "backend/config/db.js",
+          "is_external": false
+        },
+        {
+          "source": "./routes/todoRoutes",
+          "bindings": [
+            "todoRoutes"
+          ],
+          "line": 5,
+          "import_kind": "require",
+          "resolved_path": "backend/routes/todoRoutes.js",
+          "is_external": false
+        }
+      ],
+      "exports": [],
+      "dependencies": [
+        {
+          "name": "dotenv",
+          "import_path": "dotenv",
+          "dependency_type": "unknown",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "express",
+          "import_path": "express",
+          "dependency_type": "framework",
+          "methods": [
+            "json"
+          ],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "cors",
+          "import_path": "cors",
+          "dependency_type": "unknown",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "connectDB",
+          "import_path": "./config/db",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/config/db.js",
+          "side_effect_level": "database",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "todoRoutes",
+          "import_path": "./routes/todoRoutes",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/routes/todoRoutes.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "process.env",
+          "import_path": "global:process.env",
+          "dependency_type": "env",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "environment",
+          "mock_strategy": "inline_stub"
+        }
+      ],
+      "units": [],
+      "source_hash": "80d0ace7e6431f8aaf9e05e3beba8a8ceac3e049"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\vite.config.js",
+      "relative_path": "frontend/vite.config.js",
+      "language": "js",
+      "stack_area": "frontend",
+      "file_role": "utility",
+      "imports": [
+        {
+          "source": "vite",
+          "bindings": [
+            "defineConfig"
+          ],
+          "line": 1,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "@vitejs/plugin-react",
+          "bindings": [
+            "react"
+          ],
+          "line": 2,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        }
+      ],
+      "exports": [
+        {
+          "name": "defineConfig",
+          "line": 4,
+          "export_kind": "default"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "defineConfig",
+          "import_path": "vite",
+          "dependency_type": "unknown",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "react",
+          "import_path": "@vitejs/plugin-react",
+          "dependency_type": "unknown",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        }
+      ],
+      "units": [],
+      "source_hash": "8272f210fc56447690833ac6059f76d79c980b7f"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\api.js",
+      "relative_path": "frontend/src/api.js",
+      "language": "js",
+      "stack_area": "frontend",
+      "file_role": "api_helper",
+      "imports": [
+        {
+          "source": "axios",
+          "bindings": [
+            "axios"
+          ],
+          "line": 1,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        }
+      ],
+      "exports": [
+        {
+          "name": "getTodos",
+          "line": 5,
+          "export_kind": "named"
+        },
+        {
+          "name": "createTodo",
+          "line": 7,
+          "export_kind": "named"
+        },
+        {
+          "name": "updateTodo",
+          "line": 9,
+          "export_kind": "named"
+        },
+        {
+          "name": "deleteTodo",
+          "line": 11,
+          "export_kind": "named"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "axios",
+          "import_path": "axios",
+          "dependency_type": "axios_client",
+          "methods": [
+            "delete",
+            "get",
+            "post",
+            "put"
+          ],
+          "resolved_path": null,
+          "side_effect_level": "external",
+          "mock_strategy": "module_mock"
+        }
+      ],
+      "units": [
+        {
+          "id": "function:frontend\\src\\api.js:getTodos:5",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\api.js",
+          "relative_path": "frontend/src/api.js",
+          "unit_type": "function",
+          "name": "getTodos",
+          "start_line": 5,
+          "end_line": 7,
+          "source": "export const getTodos = () => axios.get(API_URL);\n\nexport const createTodo = (text) => axios.post(API_URL, { text });",
+          "calls": [
+            "axios.get",
+            "axios.post"
+          ],
+          "dependencies": [
+            "axios"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:frontend\\src\\api.js:getTodos:5",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "axios",
+                "binding": "axios",
+                "dependency_type": "axios_client",
+                "methods": [
+                  "delete",
+                  "get",
+                  "post",
+                  "put"
+                ],
+                "resolved_path": null
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Mock axios in every API-helper test to avoid live network calls."
+            ]
+          }
+        },
+        {
+          "id": "function:frontend\\src\\api.js:createTodo:7",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\api.js",
+          "relative_path": "frontend/src/api.js",
+          "unit_type": "function",
+          "name": "createTodo",
+          "start_line": 7,
+          "end_line": 8,
+          "source": "export const createTodo = (text) => axios.post(API_URL, { text });\n",
+          "calls": [
+            "axios.post"
+          ],
+          "dependencies": [
+            "axios"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:frontend\\src\\api.js:createTodo:7",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "axios",
+                "binding": "axios",
+                "dependency_type": "axios_client",
+                "methods": [
+                  "delete",
+                  "get",
+                  "post",
+                  "put"
+                ],
+                "resolved_path": null
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Mock axios in every API-helper test to avoid live network calls."
+            ]
+          }
+        },
+        {
+          "id": "function:frontend\\src\\api.js:updateTodo:9",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\api.js",
+          "relative_path": "frontend/src/api.js",
+          "unit_type": "function",
+          "name": "updateTodo",
+          "start_line": 9,
+          "end_line": 11,
+          "source": "export const updateTodo = (id, data) => axios.put(`${API_URL}/${id}`, data);\n\nexport const deleteTodo = (id) => axios.delete(`${API_URL}/${id}`);",
+          "calls": [
+            "axios.put",
+            "axios.delete"
+          ],
+          "dependencies": [
+            "axios"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:frontend\\src\\api.js:updateTodo:9",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "axios",
+                "binding": "axios",
+                "dependency_type": "axios_client",
+                "methods": [
+                  "delete",
+                  "get",
+                  "post",
+                  "put"
+                ],
+                "resolved_path": null
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Mock axios in every API-helper test to avoid live network calls."
+            ]
+          }
+        },
+        {
+          "id": "function:frontend\\src\\api.js:deleteTodo:11",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\api.js",
+          "relative_path": "frontend/src/api.js",
+          "unit_type": "function",
+          "name": "deleteTodo",
+          "start_line": 11,
+          "end_line": 11,
+          "source": "export const deleteTodo = (id) => axios.delete(`${API_URL}/${id}`);",
+          "calls": [
+            "axios.delete"
+          ],
+          "dependencies": [
+            "axios"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:frontend\\src\\api.js:deleteTodo:11",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "axios",
+                "binding": "axios",
+                "dependency_type": "axios_client",
+                "methods": [
+                  "delete",
+                  "get",
+                  "post",
+                  "put"
+                ],
+                "resolved_path": null
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Mock axios in every API-helper test to avoid live network calls."
+            ]
+          }
+        }
+      ],
+      "source_hash": "27df55c27fc8bc212cbbdf3e814f3827bec6f259"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\App.jsx",
+      "relative_path": "frontend/src/App.jsx",
+      "language": "jsx",
+      "stack_area": "frontend",
+      "file_role": "component",
+      "imports": [
+        {
+          "source": "react",
+          "bindings": [
+            "useEffect",
+            "useState"
+          ],
+          "line": 1,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "./components/TodoForm.jsx",
+          "bindings": [
+            "TodoForm"
+          ],
+          "line": 2,
+          "import_kind": "import",
+          "resolved_path": "frontend/src/components/TodoForm.jsx",
+          "is_external": false
+        },
+        {
+          "source": "./components/TodoList.jsx",
+          "bindings": [
+            "TodoList"
+          ],
+          "line": 3,
+          "import_kind": "import",
+          "resolved_path": "frontend/src/components/TodoList.jsx",
+          "is_external": false
+        },
+        {
+          "source": "./api.js",
+          "bindings": [
+            "getTodos",
+            "createTodo",
+            "updateTodo",
+            "deleteTodo"
+          ],
+          "line": 4,
+          "import_kind": "import",
+          "resolved_path": "frontend/src/api.js",
+          "is_external": false
+        }
+      ],
+      "exports": [
+        {
+          "name": "App",
+          "line": 42,
+          "export_kind": "default"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "useEffect",
+          "import_path": "react",
+          "dependency_type": "framework",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "useState",
+          "import_path": "react",
+          "dependency_type": "framework",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "TodoForm",
+          "import_path": "./components/TodoForm.jsx",
+          "dependency_type": "local_module",
+          "methods": [
+            "jsx"
+          ],
+          "resolved_path": "frontend/src/components/TodoForm.jsx",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "TodoList",
+          "import_path": "./components/TodoList.jsx",
+          "dependency_type": "local_module",
+          "methods": [
+            "jsx"
+          ],
+          "resolved_path": "frontend/src/components/TodoList.jsx",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "getTodos",
+          "import_path": "./api.js",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "frontend/src/api.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "createTodo",
+          "import_path": "./api.js",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "frontend/src/api.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "updateTodo",
+          "import_path": "./api.js",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "frontend/src/api.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "deleteTodo",
+          "import_path": "./api.js",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "frontend/src/api.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        }
+      ],
+      "units": [
+        {
+          "id": "component:frontend\\src\\App.jsx:App:6",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\App.jsx",
+          "relative_path": "frontend/src/App.jsx",
+          "unit_type": "component",
+          "name": "App",
+          "start_line": 6,
+          "end_line": 40,
+          "source": "function App() {\n  const [todos, setTodos] = useState([]);\n\n  const fetchTodos = async () => {\n    const res = await getTodos();\n    setTodos(res.data);\n  };\n\n  useEffect(() => {\n    fetchTodos();\n  }, []);\n\n  const handleAdd = async (text) => {\n    const res = await createTodo(text);\n    setTodos([res.data, ...todos]);\n  };\n\n  const handleToggle = async (todo) => {\n    const res = await updateTodo(todo._id, { completed: !todo.completed });\n    setTodos(todos.map((t) => (t._id === todo._id ? res.data : t)));\n  };\n\n  const handleDelete = async (id) => {\n    await deleteTodo(id);\n    setTodos(todos.filter((t) => t._id !== id));\n  };\n\n  return (\n    <div className=\"app\">\n      <h1>Todo List</h1>\n      <TodoForm onAdd={handleAdd} />\n      <TodoList todos={todos} onToggle={handleToggle} onDelete={handleDelete} />\n    </div>\n  );\n}",
+          "calls": [
+            "App",
+            "useState",
+            "async",
+            "getTodos",
+            "setTodos",
+            "useEffect",
+            "fetchTodos",
+            "async",
+            "createTodo",
+            "setTodos",
+            "async",
+            "updateTodo",
+            "setTodos",
+            "todos.map",
+            "async",
+            "deleteTodo",
+            "setTodos",
+            "todos.filter",
+            "return"
+          ],
+          "dependencies": [
+            "useEffect",
+            "useState",
+            "TodoForm",
+            "TodoList",
+            "getTodos",
+            "createTodo",
+            "updateTodo",
+            "deleteTodo"
+          ],
+          "template_kind": "component",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "component:frontend\\src\\App.jsx:App:6",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "./components/TodoForm.jsx",
+                "binding": "TodoForm",
+                "dependency_type": "local_module",
+                "methods": [
+                  "jsx"
+                ],
+                "resolved_path": "frontend/src/components/TodoForm.jsx"
+              },
+              {
+                "import_path": "./components/TodoList.jsx",
+                "binding": "TodoList",
+                "dependency_type": "local_module",
+                "methods": [
+                  "jsx"
+                ],
+                "resolved_path": "frontend/src/components/TodoList.jsx"
+              },
+              {
+                "import_path": "./api.js",
+                "binding": "getTodos",
+                "dependency_type": "local_module",
+                "methods": [
+                  "getTodos",
+                  "createTodo",
+                  "updateTodo",
+                  "deleteTodo"
+                ],
+                "resolved_path": "frontend/src/api.js"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "e6df497b92bdca2ef319d2e50f064c445a0285bd"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\main.jsx",
+      "relative_path": "frontend/src/main.jsx",
+      "language": "jsx",
+      "stack_area": "frontend",
+      "file_role": "component",
+      "imports": [
+        {
+          "source": "react",
+          "bindings": [
+            "React"
+          ],
+          "line": 1,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "react-dom/client",
+          "bindings": [
+            "ReactDOM"
+          ],
+          "line": 2,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "./App.jsx",
+          "bindings": [
+            "App"
+          ],
+          "line": 3,
+          "import_kind": "import",
+          "resolved_path": "frontend/src/App.jsx",
+          "is_external": false
+        },
+        {
+          "source": "./index.css",
+          "bindings": [],
+          "line": 4,
+          "import_kind": "side_effect",
+          "resolved_path": "frontend/src/index.css",
+          "is_external": false
+        }
+      ],
+      "exports": [],
+      "dependencies": [
+        {
+          "name": "React",
+          "import_path": "react",
+          "dependency_type": "framework",
+          "methods": [
+            "StrictMode"
+          ],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "ReactDOM",
+          "import_path": "react-dom/client",
+          "dependency_type": "unknown",
+          "methods": [
+            "createRoot"
+          ],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "App",
+          "import_path": "./App.jsx",
+          "dependency_type": "local_module",
+          "methods": [
+            "jsx"
+          ],
+          "resolved_path": "frontend/src/App.jsx",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "index.css",
+          "import_path": "./index.css",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "frontend/src/index.css",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        }
+      ],
+      "units": [],
+      "source_hash": "d3bfc66e882dea3b6b130c4a35bb6140603a82f4"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\components\\TodoForm.jsx",
+      "relative_path": "frontend/src/components/TodoForm.jsx",
+      "language": "jsx",
+      "stack_area": "frontend",
+      "file_role": "component",
+      "imports": [
+        {
+          "source": "react",
+          "bindings": [
+            "useState"
+          ],
+          "line": 1,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        }
+      ],
+      "exports": [
+        {
+          "name": "TodoForm",
+          "line": 26,
+          "export_kind": "default"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "useState",
+          "import_path": "react",
+          "dependency_type": "framework",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        }
+      ],
+      "units": [
+        {
+          "id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\components\\TodoForm.jsx",
+          "relative_path": "frontend/src/components/TodoForm.jsx",
+          "unit_type": "component",
+          "name": "TodoForm",
+          "start_line": 3,
+          "end_line": 24,
+          "source": "function TodoForm({ onAdd }) {\n  const [text, setText] = useState(\"\");\n\n  const handleSubmit = (e) => {\n    e.preventDefault();\n    if (!text.trim()) return;\n    onAdd(text);\n    setText(\"\");\n  };\n\n  return (\n    <form onSubmit={handleSubmit} className=\"todo-form\">\n      <input\n        type=\"text\"\n        value={text}\n        onChange={(e) => setText(e.target.value)}\n        placeholder=\"Add a new task\"\n      />\n      <button type=\"submit\">Add</button>\n    </form>\n  );\n}",
+          "calls": [
+            "TodoForm",
+            "useState",
+            "e.preventDefault",
+            "text.trim",
+            "onAdd",
+            "setText",
+            "return",
+            "setText"
+          ],
+          "dependencies": [
+            "useState"
+          ],
+          "template_kind": "component",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+            "framework": "jest",
+            "module_mocks": [],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "f9132c85b2d63916851e10f4f24710c860df70ae"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\components\\TodoItem.jsx",
+      "relative_path": "frontend/src/components/TodoItem.jsx",
+      "language": "jsx",
+      "stack_area": "frontend",
+      "file_role": "component",
+      "imports": [],
+      "exports": [
+        {
+          "name": "TodoItem",
+          "line": 15,
+          "export_kind": "default"
+        }
+      ],
+      "dependencies": [],
+      "units": [
+        {
+          "id": "component:frontend\\src\\components\\TodoItem.jsx:TodoItem:1",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\components\\TodoItem.jsx",
+          "relative_path": "frontend/src/components/TodoItem.jsx",
+          "unit_type": "component",
+          "name": "TodoItem",
+          "start_line": 1,
+          "end_line": 13,
+          "source": "function TodoItem({ todo, onToggle, onDelete }) {\n  return (\n    <li className=\"todo-item\">\n      <span\n        className={todo.completed ? \"todo-text completed\" : \"todo-text\"}\n        onClick={() => onToggle(todo)}\n      >\n        {todo.text}\n      </span>\n      <button onClick={() => onDelete(todo._id)}>Delete</button>\n    </li>\n  );\n}",
+          "calls": [
+            "TodoItem",
+            "return",
+            "onToggle",
+            "onDelete"
+          ],
+          "dependencies": [],
+          "template_kind": "component",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "component:frontend\\src\\components\\TodoItem.jsx:TodoItem:1",
+            "framework": "jest",
+            "module_mocks": [],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "2addf12fa7444ec234f2fbdb171b3e232b7b3939"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\components\\TodoList.jsx",
+      "relative_path": "frontend/src/components/TodoList.jsx",
+      "language": "jsx",
+      "stack_area": "frontend",
+      "file_role": "component",
+      "imports": [
+        {
+          "source": "./TodoItem.jsx",
+          "bindings": [
+            "TodoItem"
+          ],
+          "line": 1,
+          "import_kind": "import",
+          "resolved_path": "frontend/src/components/TodoItem.jsx",
+          "is_external": false
+        }
+      ],
+      "exports": [
+        {
+          "name": "TodoList",
+          "line": 22,
+          "export_kind": "default"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "TodoItem",
+          "import_path": "./TodoItem.jsx",
+          "dependency_type": "local_module",
+          "methods": [
+            "jsx"
+          ],
+          "resolved_path": "frontend/src/components/TodoItem.jsx",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        }
+      ],
+      "units": [
+        {
+          "id": "component:frontend\\src\\components\\TodoList.jsx:TodoList:3",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\components\\TodoList.jsx",
+          "relative_path": "frontend/src/components/TodoList.jsx",
+          "unit_type": "component",
+          "name": "TodoList",
+          "start_line": 3,
+          "end_line": 20,
+          "source": "function TodoList({ todos, onToggle, onDelete }) {\n  if (todos.length === 0) {\n    return <p>No tasks yet. Add one above.</p>;\n  }\n\n  return (\n    <ul className=\"todo-list\">\n      {todos.map((todo) => (\n        <TodoItem\n          key={todo._id}\n          todo={todo}\n          onToggle={onToggle}\n          onDelete={onDelete}\n        />\n      ))}\n    </ul>\n  );\n}",
+          "calls": [
+            "TodoList",
+            "return",
+            "todos.map"
+          ],
+          "dependencies": [
+            "TodoItem"
+          ],
+          "template_kind": "component",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "component:frontend\\src\\components\\TodoList.jsx:TodoList:3",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "./TodoItem.jsx",
+                "binding": "TodoItem",
+                "dependency_type": "local_module",
+                "methods": [
+                  "jsx"
+                ],
+                "resolved_path": "frontend/src/components/TodoItem.jsx"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "b72e2d559f21a366f55e6f35bcb441fe423758cd"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\config\\db.js",
+      "relative_path": "backend/config/db.js",
+      "language": "js",
+      "stack_area": "backend",
+      "file_role": "config",
+      "imports": [
+        {
+          "source": "mongoose",
+          "bindings": [
+            "mongoose"
+          ],
+          "line": 1,
+          "import_kind": "require",
+          "resolved_path": null,
+          "is_external": true
+        }
+      ],
+      "exports": [
+        {
+          "name": "default",
+          "line": 13,
+          "export_kind": "commonjs"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "mongoose",
+          "import_path": "mongoose",
+          "dependency_type": "unknown",
+          "methods": [
+            "connect"
+          ],
+          "resolved_path": null,
+          "side_effect_level": "database",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "process.env",
+          "import_path": "global:process.env",
+          "dependency_type": "env",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "environment",
+          "mock_strategy": "inline_stub"
+        }
+      ],
+      "units": [
+        {
+          "id": "function:backend\\config\\db.js:connectDB:3",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\config\\db.js",
+          "relative_path": "backend/config/db.js",
+          "unit_type": "function",
+          "name": "connectDB",
+          "start_line": 3,
+          "end_line": 11,
+          "source": "const connectDB = async () => {\n  try {\n    await mongoose.connect(process.env.MONGO_URI);\n    console.log(\"MongoDB connected\");\n  } catch (error) {\n    console.error(\"MongoDB connection failed:\", error.message);\n    process.exit(1);\n  }\n};",
+          "calls": [
+            "async",
+            "mongoose.connect",
+            "console.log",
+            "console.error",
+            "process.exit"
+          ],
+          "dependencies": [
+            "mongoose",
+            "process.env"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:backend\\config\\db.js:connectDB:3",
+            "framework": "jest",
+            "module_mocks": [],
+            "inline_stubs": [
+              "process.env"
+            ],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "0d90c18dd526d2d8a8182ce591f37f80df4686a4"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\controllers\\todoController.js",
+      "relative_path": "backend/controllers/todoController.js",
+      "language": "js",
+      "stack_area": "backend",
+      "file_role": "controller",
+      "imports": [
+        {
+          "source": "../models/Todo",
+          "bindings": [
+            "Todo"
+          ],
+          "line": 1,
+          "import_kind": "require",
+          "resolved_path": "backend/models/Todo.js",
+          "is_external": false
+        }
+      ],
+      "exports": [
+        {
+          "name": "getTodos",
+          "line": 39,
+          "export_kind": "commonjs_named"
+        },
+        {
+          "name": "createTodo",
+          "line": 39,
+          "export_kind": "commonjs_named"
+        },
+        {
+          "name": "updateTodo",
+          "line": 39,
+          "export_kind": "commonjs_named"
+        },
+        {
+          "name": "deleteTodo",
+          "line": 39,
+          "export_kind": "commonjs_named"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Todo",
+          "import_path": "../models/Todo",
+          "dependency_type": "mongoose_model",
+          "methods": [
+            "create",
+            "find",
+            "findByIdAndDelete",
+            "findByIdAndUpdate"
+          ],
+          "resolved_path": "backend/models/Todo.js",
+          "side_effect_level": "database",
+          "mock_strategy": "module_mock"
+        }
+      ],
+      "units": [
+        {
+          "id": "function:backend\\controllers\\todoController.js:getTodos:4",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\controllers\\todoController.js",
+          "relative_path": "backend/controllers/todoController.js",
+          "unit_type": "function",
+          "name": "getTodos",
+          "start_line": 4,
+          "end_line": 7,
+          "source": "const getTodos = async (req, res) => {\n  const todos = await Todo.find().sort({ createdAt: -1 });\n  res.json(todos);\n};",
+          "calls": [
+            "async",
+            "Todo.find",
+            "sort",
+            "res.json"
+          ],
+          "dependencies": [
+            "Todo"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:backend\\controllers\\todoController.js:getTodos:4",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../models/Todo",
+                "binding": "Todo",
+                "dependency_type": "mongoose_model",
+                "methods": [
+                  "create",
+                  "find",
+                  "findByIdAndDelete",
+                  "findByIdAndUpdate"
+                ],
+                "resolved_path": "backend/models/Todo.js"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+            ]
+          }
+        },
+        {
+          "id": "function:backend\\controllers\\todoController.js:createTodo:10",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\controllers\\todoController.js",
+          "relative_path": "backend/controllers/todoController.js",
+          "unit_type": "function",
+          "name": "createTodo",
+          "start_line": 10,
+          "end_line": 17,
+          "source": "const createTodo = async (req, res) => {\n  const { text } = req.body;\n  if (!text) {\n    return res.status(400).json({ message: \"Text is required\" });\n  }\n  const todo = await Todo.create({ text });\n  res.status(201).json(todo);\n};",
+          "calls": [
+            "async",
+            "res.status",
+            "json",
+            "Todo.create",
+            "res.status",
+            "json"
+          ],
+          "dependencies": [
+            "Todo"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:backend\\controllers\\todoController.js:createTodo:10",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../models/Todo",
+                "binding": "Todo",
+                "dependency_type": "mongoose_model",
+                "methods": [
+                  "create",
+                  "find",
+                  "findByIdAndDelete",
+                  "findByIdAndUpdate"
+                ],
+                "resolved_path": "backend/models/Todo.js"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+            ]
+          }
+        },
+        {
+          "id": "function:backend\\controllers\\todoController.js:updateTodo:20",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\controllers\\todoController.js",
+          "relative_path": "backend/controllers/todoController.js",
+          "unit_type": "function",
+          "name": "updateTodo",
+          "start_line": 20,
+          "end_line": 27,
+          "source": "const updateTodo = async (req, res) => {\n  const { id } = req.params;\n  const todo = await Todo.findByIdAndUpdate(id, req.body, { new: true });\n  if (!todo) {\n    return res.status(404).json({ message: \"Todo not found\" });\n  }\n  res.json(todo);\n};",
+          "calls": [
+            "async",
+            "Todo.findByIdAndUpdate",
+            "res.status",
+            "json",
+            "res.json"
+          ],
+          "dependencies": [
+            "Todo"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:backend\\controllers\\todoController.js:updateTodo:20",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../models/Todo",
+                "binding": "Todo",
+                "dependency_type": "mongoose_model",
+                "methods": [
+                  "create",
+                  "find",
+                  "findByIdAndDelete",
+                  "findByIdAndUpdate"
+                ],
+                "resolved_path": "backend/models/Todo.js"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+            ]
+          }
+        },
+        {
+          "id": "function:backend\\controllers\\todoController.js:deleteTodo:30",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\controllers\\todoController.js",
+          "relative_path": "backend/controllers/todoController.js",
+          "unit_type": "function",
+          "name": "deleteTodo",
+          "start_line": 30,
+          "end_line": 37,
+          "source": "const deleteTodo = async (req, res) => {\n  const { id } = req.params;\n  const todo = await Todo.findByIdAndDelete(id);\n  if (!todo) {\n    return res.status(404).json({ message: \"Todo not found\" });\n  }\n  res.json({ message: \"Todo deleted\" });\n};",
+          "calls": [
+            "async",
+            "Todo.findByIdAndDelete",
+            "res.status",
+            "json",
+            "res.json"
+          ],
+          "dependencies": [
+            "Todo"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:backend\\controllers\\todoController.js:deleteTodo:30",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../models/Todo",
+                "binding": "Todo",
+                "dependency_type": "mongoose_model",
+                "methods": [
+                  "create",
+                  "find",
+                  "findByIdAndDelete",
+                  "findByIdAndUpdate"
+                ],
+                "resolved_path": "backend/models/Todo.js"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+            ]
+          }
+        }
+      ],
+      "source_hash": "70ec5f8d764b4bcc4eaac48986aebd9212dfc06e"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\models\\Todo.js",
+      "relative_path": "backend/models/Todo.js",
+      "language": "js",
+      "stack_area": "backend",
+      "file_role": "model",
+      "imports": [
+        {
+          "source": "mongoose",
+          "bindings": [
+            "mongoose"
+          ],
+          "line": 1,
+          "import_kind": "require",
+          "resolved_path": null,
+          "is_external": true
+        }
+      ],
+      "exports": [
+        {
+          "name": "default",
+          "line": 17,
+          "export_kind": "commonjs"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "mongoose",
+          "import_path": "mongoose",
+          "dependency_type": "unknown",
+          "methods": [
+            "Schema",
+            "model"
+          ],
+          "resolved_path": null,
+          "side_effect_level": "database",
+          "mock_strategy": "manual"
+        }
+      ],
+      "units": [
+        {
+          "id": "model:backend\\models\\Todo.js:Todo:3",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\models\\Todo.js",
+          "relative_path": "backend/models/Todo.js",
+          "unit_type": "model",
+          "name": "Todo",
+          "start_line": 3,
+          "end_line": 13,
+          "source": "const todoSchema = new mongoose.Schema(\n  {\n    text: {\n      type: String,\n      required: true,\n    },\n    completed: {\n      type: Boolean,\n      default: false,\n    },\n  },",
+          "calls": [
+            "mongoose.Schema"
+          ],
+          "dependencies": [
+            "mongoose"
+          ],
+          "template_kind": "model",
+          "risk_level": "high",
+          "mock_plan": {
+            "target_unit_id": "model:backend\\models\\Todo.js:Todo:3",
+            "framework": "jest",
+            "module_mocks": [],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "28e8f1fbc9074c18ff00466fc259d53b9a8dedd4"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\routes\\todoRoutes.js",
+      "relative_path": "backend/routes/todoRoutes.js",
+      "language": "js",
+      "stack_area": "backend",
+      "file_role": "route",
+      "imports": [
+        {
+          "source": "../controllers/todoController",
+          "bindings": [
+            "getTodos",
+            "createTodo",
+            "updateTodo",
+            "deleteTodo"
+          ],
+          "line": 3,
+          "import_kind": "require",
+          "resolved_path": "backend/controllers/todoController.js",
+          "is_external": false
+        },
+        {
+          "source": "express",
+          "bindings": [
+            "express"
+          ],
+          "line": 1,
+          "import_kind": "require",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "../controllers/todoController",
+          "bindings": [],
+          "line": 8,
+          "import_kind": "side_effect",
+          "resolved_path": "backend/controllers/todoController.js",
+          "is_external": false
+        }
+      ],
+      "exports": [
+        {
+          "name": "default",
+          "line": 15,
+          "export_kind": "commonjs"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "getTodos",
+          "import_path": "../controllers/todoController",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/controllers/todoController.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "createTodo",
+          "import_path": "../controllers/todoController",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/controllers/todoController.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "updateTodo",
+          "import_path": "../controllers/todoController",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/controllers/todoController.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "deleteTodo",
+          "import_path": "../controllers/todoController",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/controllers/todoController.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "express",
+          "import_path": "express",
+          "dependency_type": "framework",
+          "methods": [
+            "Router"
+          ],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "todoController",
+          "import_path": "../controllers/todoController",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/controllers/todoController.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        }
+      ],
+      "units": [
+        {
+          "id": "route:backend\\routes\\todoRoutes.js:GET /:10",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\routes\\todoRoutes.js",
+          "relative_path": "backend/routes/todoRoutes.js",
+          "unit_type": "route",
+          "name": "GET /",
+          "start_line": 10,
+          "end_line": 11,
+          "source": "router.get(\"/\", getTodos);\nrouter.post(\"/\", createTodo);",
+          "calls": [
+            "router.get",
+            "router.post"
+          ],
+          "dependencies": [
+            "getTodos",
+            "createTodo"
+          ],
+          "template_kind": "route",
+          "risk_level": "high",
+          "mock_plan": {
+            "target_unit_id": "route:backend\\routes\\todoRoutes.js:GET /:10",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../controllers/todoController",
+                "binding": "getTodos",
+                "dependency_type": "local_module",
+                "methods": [
+                  "getTodos",
+                  "createTodo",
+                  "updateTodo",
+                  "deleteTodo",
+                  "todoController"
+                ],
+                "resolved_path": "backend/controllers/todoController.js"
+              }
+            ],
+            "inline_stubs": [
+              "req",
+              "res"
+            ],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        },
+        {
+          "id": "route:backend\\routes\\todoRoutes.js:POST /:11",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\routes\\todoRoutes.js",
+          "relative_path": "backend/routes/todoRoutes.js",
+          "unit_type": "route",
+          "name": "POST /",
+          "start_line": 11,
+          "end_line": 12,
+          "source": "router.post(\"/\", createTodo);\nrouter.put(\"/:id\", updateTodo);",
+          "calls": [
+            "router.post",
+            "router.put"
+          ],
+          "dependencies": [
+            "createTodo",
+            "updateTodo"
+          ],
+          "template_kind": "route",
+          "risk_level": "high",
+          "mock_plan": {
+            "target_unit_id": "route:backend\\routes\\todoRoutes.js:POST /:11",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../controllers/todoController",
+                "binding": "getTodos",
+                "dependency_type": "local_module",
+                "methods": [
+                  "getTodos",
+                  "createTodo",
+                  "updateTodo",
+                  "deleteTodo",
+                  "todoController"
+                ],
+                "resolved_path": "backend/controllers/todoController.js"
+              }
+            ],
+            "inline_stubs": [
+              "req",
+              "res"
+            ],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        },
+        {
+          "id": "route:backend\\routes\\todoRoutes.js:PUT /:id:12",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\routes\\todoRoutes.js",
+          "relative_path": "backend/routes/todoRoutes.js",
+          "unit_type": "route",
+          "name": "PUT /:id",
+          "start_line": 12,
+          "end_line": 13,
+          "source": "router.put(\"/:id\", updateTodo);\nrouter.delete(\"/:id\", deleteTodo);",
+          "calls": [
+            "router.put",
+            "router.delete"
+          ],
+          "dependencies": [
+            "updateTodo",
+            "deleteTodo"
+          ],
+          "template_kind": "route",
+          "risk_level": "high",
+          "mock_plan": {
+            "target_unit_id": "route:backend\\routes\\todoRoutes.js:PUT /:id:12",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../controllers/todoController",
+                "binding": "getTodos",
+                "dependency_type": "local_module",
+                "methods": [
+                  "getTodos",
+                  "createTodo",
+                  "updateTodo",
+                  "deleteTodo",
+                  "todoController"
+                ],
+                "resolved_path": "backend/controllers/todoController.js"
+              }
+            ],
+            "inline_stubs": [
+              "req",
+              "res"
+            ],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        },
+        {
+          "id": "route:backend\\routes\\todoRoutes.js:DELETE /:id:13",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\routes\\todoRoutes.js",
+          "relative_path": "backend/routes/todoRoutes.js",
+          "unit_type": "route",
+          "name": "DELETE /:id",
+          "start_line": 13,
+          "end_line": 15,
+          "source": "router.delete(\"/:id\", deleteTodo);\n\nmodule.exports = router;",
+          "calls": [
+            "router.delete"
+          ],
+          "dependencies": [
+            "deleteTodo"
+          ],
+          "template_kind": "route",
+          "risk_level": "high",
+          "mock_plan": {
+            "target_unit_id": "route:backend\\routes\\todoRoutes.js:DELETE /:id:13",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../controllers/todoController",
+                "binding": "getTodos",
+                "dependency_type": "local_module",
+                "methods": [
+                  "getTodos",
+                  "createTodo",
+                  "updateTodo",
+                  "deleteTodo",
+                  "todoController"
+                ],
+                "resolved_path": "backend/controllers/todoController.js"
+              }
+            ],
+            "inline_stubs": [
+              "req",
+              "res"
+            ],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "75ef8d93e32360577183823578df6d44ff6f5f6d"
+    }
+  ],
+  "units": [
+    {
+      "id": "function:frontend\\src\\api.js:getTodos:5",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\api.js",
+      "relative_path": "frontend/src/api.js",
+      "unit_type": "function",
+      "name": "getTodos",
+      "start_line": 5,
+      "end_line": 7,
+      "source": "export const getTodos = () => axios.get(API_URL);\n\nexport const createTodo = (text) => axios.post(API_URL, { text });",
+      "calls": [
+        "axios.get",
+        "axios.post"
+      ],
+      "dependencies": [
+        "axios"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:frontend\\src\\api.js:getTodos:5",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "axios",
+            "binding": "axios",
+            "dependency_type": "axios_client",
+            "methods": [
+              "delete",
+              "get",
+              "post",
+              "put"
+            ],
+            "resolved_path": null
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Mock axios in every API-helper test to avoid live network calls."
+        ]
+      }
+    },
+    {
+      "id": "function:frontend\\src\\api.js:createTodo:7",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\api.js",
+      "relative_path": "frontend/src/api.js",
+      "unit_type": "function",
+      "name": "createTodo",
+      "start_line": 7,
+      "end_line": 8,
+      "source": "export const createTodo = (text) => axios.post(API_URL, { text });\n",
+      "calls": [
+        "axios.post"
+      ],
+      "dependencies": [
+        "axios"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:frontend\\src\\api.js:createTodo:7",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "axios",
+            "binding": "axios",
+            "dependency_type": "axios_client",
+            "methods": [
+              "delete",
+              "get",
+              "post",
+              "put"
+            ],
+            "resolved_path": null
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Mock axios in every API-helper test to avoid live network calls."
+        ]
+      }
+    },
+    {
+      "id": "function:frontend\\src\\api.js:updateTodo:9",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\api.js",
+      "relative_path": "frontend/src/api.js",
+      "unit_type": "function",
+      "name": "updateTodo",
+      "start_line": 9,
+      "end_line": 11,
+      "source": "export const updateTodo = (id, data) => axios.put(`${API_URL}/${id}`, data);\n\nexport const deleteTodo = (id) => axios.delete(`${API_URL}/${id}`);",
+      "calls": [
+        "axios.put",
+        "axios.delete"
+      ],
+      "dependencies": [
+        "axios"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:frontend\\src\\api.js:updateTodo:9",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "axios",
+            "binding": "axios",
+            "dependency_type": "axios_client",
+            "methods": [
+              "delete",
+              "get",
+              "post",
+              "put"
+            ],
+            "resolved_path": null
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Mock axios in every API-helper test to avoid live network calls."
+        ]
+      }
+    },
+    {
+      "id": "function:frontend\\src\\api.js:deleteTodo:11",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\api.js",
+      "relative_path": "frontend/src/api.js",
+      "unit_type": "function",
+      "name": "deleteTodo",
+      "start_line": 11,
+      "end_line": 11,
+      "source": "export const deleteTodo = (id) => axios.delete(`${API_URL}/${id}`);",
+      "calls": [
+        "axios.delete"
+      ],
+      "dependencies": [
+        "axios"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:frontend\\src\\api.js:deleteTodo:11",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "axios",
+            "binding": "axios",
+            "dependency_type": "axios_client",
+            "methods": [
+              "delete",
+              "get",
+              "post",
+              "put"
+            ],
+            "resolved_path": null
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Mock axios in every API-helper test to avoid live network calls."
+        ]
+      }
+    },
+    {
+      "id": "component:frontend\\src\\App.jsx:App:6",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\App.jsx",
+      "relative_path": "frontend/src/App.jsx",
+      "unit_type": "component",
+      "name": "App",
+      "start_line": 6,
+      "end_line": 40,
+      "source": "function App() {\n  const [todos, setTodos] = useState([]);\n\n  const fetchTodos = async () => {\n    const res = await getTodos();\n    setTodos(res.data);\n  };\n\n  useEffect(() => {\n    fetchTodos();\n  }, []);\n\n  const handleAdd = async (text) => {\n    const res = await createTodo(text);\n    setTodos([res.data, ...todos]);\n  };\n\n  const handleToggle = async (todo) => {\n    const res = await updateTodo(todo._id, { completed: !todo.completed });\n    setTodos(todos.map((t) => (t._id === todo._id ? res.data : t)));\n  };\n\n  const handleDelete = async (id) => {\n    await deleteTodo(id);\n    setTodos(todos.filter((t) => t._id !== id));\n  };\n\n  return (\n    <div className=\"app\">\n      <h1>Todo List</h1>\n      <TodoForm onAdd={handleAdd} />\n      <TodoList todos={todos} onToggle={handleToggle} onDelete={handleDelete} />\n    </div>\n  );\n}",
+      "calls": [
+        "App",
+        "useState",
+        "async",
+        "getTodos",
+        "setTodos",
+        "useEffect",
+        "fetchTodos",
+        "async",
+        "createTodo",
+        "setTodos",
+        "async",
+        "updateTodo",
+        "setTodos",
+        "todos.map",
+        "async",
+        "deleteTodo",
+        "setTodos",
+        "todos.filter",
+        "return"
+      ],
+      "dependencies": [
+        "useEffect",
+        "useState",
+        "TodoForm",
+        "TodoList",
+        "getTodos",
+        "createTodo",
+        "updateTodo",
+        "deleteTodo"
+      ],
+      "template_kind": "component",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "component:frontend\\src\\App.jsx:App:6",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "./components/TodoForm.jsx",
+            "binding": "TodoForm",
+            "dependency_type": "local_module",
+            "methods": [
+              "jsx"
+            ],
+            "resolved_path": "frontend/src/components/TodoForm.jsx"
+          },
+          {
+            "import_path": "./components/TodoList.jsx",
+            "binding": "TodoList",
+            "dependency_type": "local_module",
+            "methods": [
+              "jsx"
+            ],
+            "resolved_path": "frontend/src/components/TodoList.jsx"
+          },
+          {
+            "import_path": "./api.js",
+            "binding": "getTodos",
+            "dependency_type": "local_module",
+            "methods": [
+              "getTodos",
+              "createTodo",
+              "updateTodo",
+              "deleteTodo"
+            ],
+            "resolved_path": "frontend/src/api.js"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\components\\TodoForm.jsx",
+      "relative_path": "frontend/src/components/TodoForm.jsx",
+      "unit_type": "component",
+      "name": "TodoForm",
+      "start_line": 3,
+      "end_line": 24,
+      "source": "function TodoForm({ onAdd }) {\n  const [text, setText] = useState(\"\");\n\n  const handleSubmit = (e) => {\n    e.preventDefault();\n    if (!text.trim()) return;\n    onAdd(text);\n    setText(\"\");\n  };\n\n  return (\n    <form onSubmit={handleSubmit} className=\"todo-form\">\n      <input\n        type=\"text\"\n        value={text}\n        onChange={(e) => setText(e.target.value)}\n        placeholder=\"Add a new task\"\n      />\n      <button type=\"submit\">Add</button>\n    </form>\n  );\n}",
+      "calls": [
+        "TodoForm",
+        "useState",
+        "e.preventDefault",
+        "text.trim",
+        "onAdd",
+        "setText",
+        "return",
+        "setText"
+      ],
+      "dependencies": [
+        "useState"
+      ],
+      "template_kind": "component",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+        "framework": "jest",
+        "module_mocks": [],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "component:frontend\\src\\components\\TodoItem.jsx:TodoItem:1",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\components\\TodoItem.jsx",
+      "relative_path": "frontend/src/components/TodoItem.jsx",
+      "unit_type": "component",
+      "name": "TodoItem",
+      "start_line": 1,
+      "end_line": 13,
+      "source": "function TodoItem({ todo, onToggle, onDelete }) {\n  return (\n    <li className=\"todo-item\">\n      <span\n        className={todo.completed ? \"todo-text completed\" : \"todo-text\"}\n        onClick={() => onToggle(todo)}\n      >\n        {todo.text}\n      </span>\n      <button onClick={() => onDelete(todo._id)}>Delete</button>\n    </li>\n  );\n}",
+      "calls": [
+        "TodoItem",
+        "return",
+        "onToggle",
+        "onDelete"
+      ],
+      "dependencies": [],
+      "template_kind": "component",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "component:frontend\\src\\components\\TodoItem.jsx:TodoItem:1",
+        "framework": "jest",
+        "module_mocks": [],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "component:frontend\\src\\components\\TodoList.jsx:TodoList:3",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\frontend\\src\\components\\TodoList.jsx",
+      "relative_path": "frontend/src/components/TodoList.jsx",
+      "unit_type": "component",
+      "name": "TodoList",
+      "start_line": 3,
+      "end_line": 20,
+      "source": "function TodoList({ todos, onToggle, onDelete }) {\n  if (todos.length === 0) {\n    return <p>No tasks yet. Add one above.</p>;\n  }\n\n  return (\n    <ul className=\"todo-list\">\n      {todos.map((todo) => (\n        <TodoItem\n          key={todo._id}\n          todo={todo}\n          onToggle={onToggle}\n          onDelete={onDelete}\n        />\n      ))}\n    </ul>\n  );\n}",
+      "calls": [
+        "TodoList",
+        "return",
+        "todos.map"
+      ],
+      "dependencies": [
+        "TodoItem"
+      ],
+      "template_kind": "component",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "component:frontend\\src\\components\\TodoList.jsx:TodoList:3",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "./TodoItem.jsx",
+            "binding": "TodoItem",
+            "dependency_type": "local_module",
+            "methods": [
+              "jsx"
+            ],
+            "resolved_path": "frontend/src/components/TodoItem.jsx"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "function:backend\\config\\db.js:connectDB:3",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\config\\db.js",
+      "relative_path": "backend/config/db.js",
+      "unit_type": "function",
+      "name": "connectDB",
+      "start_line": 3,
+      "end_line": 11,
+      "source": "const connectDB = async () => {\n  try {\n    await mongoose.connect(process.env.MONGO_URI);\n    console.log(\"MongoDB connected\");\n  } catch (error) {\n    console.error(\"MongoDB connection failed:\", error.message);\n    process.exit(1);\n  }\n};",
+      "calls": [
+        "async",
+        "mongoose.connect",
+        "console.log",
+        "console.error",
+        "process.exit"
+      ],
+      "dependencies": [
+        "mongoose",
+        "process.env"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:backend\\config\\db.js:connectDB:3",
+        "framework": "jest",
+        "module_mocks": [],
+        "inline_stubs": [
+          "process.env"
+        ],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "function:backend\\controllers\\todoController.js:getTodos:4",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\controllers\\todoController.js",
+      "relative_path": "backend/controllers/todoController.js",
+      "unit_type": "function",
+      "name": "getTodos",
+      "start_line": 4,
+      "end_line": 7,
+      "source": "const getTodos = async (req, res) => {\n  const todos = await Todo.find().sort({ createdAt: -1 });\n  res.json(todos);\n};",
+      "calls": [
+        "async",
+        "Todo.find",
+        "sort",
+        "res.json"
+      ],
+      "dependencies": [
+        "Todo"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:backend\\controllers\\todoController.js:getTodos:4",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../models/Todo",
+            "binding": "Todo",
+            "dependency_type": "mongoose_model",
+            "methods": [
+              "create",
+              "find",
+              "findByIdAndDelete",
+              "findByIdAndUpdate"
+            ],
+            "resolved_path": "backend/models/Todo.js"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+        ]
+      }
+    },
+    {
+      "id": "function:backend\\controllers\\todoController.js:createTodo:10",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\controllers\\todoController.js",
+      "relative_path": "backend/controllers/todoController.js",
+      "unit_type": "function",
+      "name": "createTodo",
+      "start_line": 10,
+      "end_line": 17,
+      "source": "const createTodo = async (req, res) => {\n  const { text } = req.body;\n  if (!text) {\n    return res.status(400).json({ message: \"Text is required\" });\n  }\n  const todo = await Todo.create({ text });\n  res.status(201).json(todo);\n};",
+      "calls": [
+        "async",
+        "res.status",
+        "json",
+        "Todo.create",
+        "res.status",
+        "json"
+      ],
+      "dependencies": [
+        "Todo"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:backend\\controllers\\todoController.js:createTodo:10",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../models/Todo",
+            "binding": "Todo",
+            "dependency_type": "mongoose_model",
+            "methods": [
+              "create",
+              "find",
+              "findByIdAndDelete",
+              "findByIdAndUpdate"
+            ],
+            "resolved_path": "backend/models/Todo.js"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+        ]
+      }
+    },
+    {
+      "id": "function:backend\\controllers\\todoController.js:updateTodo:20",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\controllers\\todoController.js",
+      "relative_path": "backend/controllers/todoController.js",
+      "unit_type": "function",
+      "name": "updateTodo",
+      "start_line": 20,
+      "end_line": 27,
+      "source": "const updateTodo = async (req, res) => {\n  const { id } = req.params;\n  const todo = await Todo.findByIdAndUpdate(id, req.body, { new: true });\n  if (!todo) {\n    return res.status(404).json({ message: \"Todo not found\" });\n  }\n  res.json(todo);\n};",
+      "calls": [
+        "async",
+        "Todo.findByIdAndUpdate",
+        "res.status",
+        "json",
+        "res.json"
+      ],
+      "dependencies": [
+        "Todo"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:backend\\controllers\\todoController.js:updateTodo:20",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../models/Todo",
+            "binding": "Todo",
+            "dependency_type": "mongoose_model",
+            "methods": [
+              "create",
+              "find",
+              "findByIdAndDelete",
+              "findByIdAndUpdate"
+            ],
+            "resolved_path": "backend/models/Todo.js"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+        ]
+      }
+    },
+    {
+      "id": "function:backend\\controllers\\todoController.js:deleteTodo:30",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\controllers\\todoController.js",
+      "relative_path": "backend/controllers/todoController.js",
+      "unit_type": "function",
+      "name": "deleteTodo",
+      "start_line": 30,
+      "end_line": 37,
+      "source": "const deleteTodo = async (req, res) => {\n  const { id } = req.params;\n  const todo = await Todo.findByIdAndDelete(id);\n  if (!todo) {\n    return res.status(404).json({ message: \"Todo not found\" });\n  }\n  res.json({ message: \"Todo deleted\" });\n};",
+      "calls": [
+        "async",
+        "Todo.findByIdAndDelete",
+        "res.status",
+        "json",
+        "res.json"
+      ],
+      "dependencies": [
+        "Todo"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:backend\\controllers\\todoController.js:deleteTodo:30",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../models/Todo",
+            "binding": "Todo",
+            "dependency_type": "mongoose_model",
+            "methods": [
+              "create",
+              "find",
+              "findByIdAndDelete",
+              "findByIdAndUpdate"
+            ],
+            "resolved_path": "backend/models/Todo.js"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+        ]
+      }
+    },
+    {
+      "id": "model:backend\\models\\Todo.js:Todo:3",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\models\\Todo.js",
+      "relative_path": "backend/models/Todo.js",
+      "unit_type": "model",
+      "name": "Todo",
+      "start_line": 3,
+      "end_line": 13,
+      "source": "const todoSchema = new mongoose.Schema(\n  {\n    text: {\n      type: String,\n      required: true,\n    },\n    completed: {\n      type: Boolean,\n      default: false,\n    },\n  },",
+      "calls": [
+        "mongoose.Schema"
+      ],
+      "dependencies": [
+        "mongoose"
+      ],
+      "template_kind": "model",
+      "risk_level": "high",
+      "mock_plan": {
+        "target_unit_id": "model:backend\\models\\Todo.js:Todo:3",
+        "framework": "jest",
+        "module_mocks": [],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "route:backend\\routes\\todoRoutes.js:GET /:10",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\routes\\todoRoutes.js",
+      "relative_path": "backend/routes/todoRoutes.js",
+      "unit_type": "route",
+      "name": "GET /",
+      "start_line": 10,
+      "end_line": 11,
+      "source": "router.get(\"/\", getTodos);\nrouter.post(\"/\", createTodo);",
+      "calls": [
+        "router.get",
+        "router.post"
+      ],
+      "dependencies": [
+        "getTodos",
+        "createTodo"
+      ],
+      "template_kind": "route",
+      "risk_level": "high",
+      "mock_plan": {
+        "target_unit_id": "route:backend\\routes\\todoRoutes.js:GET /:10",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../controllers/todoController",
+            "binding": "getTodos",
+            "dependency_type": "local_module",
+            "methods": [
+              "getTodos",
+              "createTodo",
+              "updateTodo",
+              "deleteTodo",
+              "todoController"
+            ],
+            "resolved_path": "backend/controllers/todoController.js"
+          }
+        ],
+        "inline_stubs": [
+          "req",
+          "res"
+        ],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "route:backend\\routes\\todoRoutes.js:POST /:11",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\routes\\todoRoutes.js",
+      "relative_path": "backend/routes/todoRoutes.js",
+      "unit_type": "route",
+      "name": "POST /",
+      "start_line": 11,
+      "end_line": 12,
+      "source": "router.post(\"/\", createTodo);\nrouter.put(\"/:id\", updateTodo);",
+      "calls": [
+        "router.post",
+        "router.put"
+      ],
+      "dependencies": [
+        "createTodo",
+        "updateTodo"
+      ],
+      "template_kind": "route",
+      "risk_level": "high",
+      "mock_plan": {
+        "target_unit_id": "route:backend\\routes\\todoRoutes.js:POST /:11",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../controllers/todoController",
+            "binding": "getTodos",
+            "dependency_type": "local_module",
+            "methods": [
+              "getTodos",
+              "createTodo",
+              "updateTodo",
+              "deleteTodo",
+              "todoController"
+            ],
+            "resolved_path": "backend/controllers/todoController.js"
+          }
+        ],
+        "inline_stubs": [
+          "req",
+          "res"
+        ],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "route:backend\\routes\\todoRoutes.js:PUT /:id:12",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\routes\\todoRoutes.js",
+      "relative_path": "backend/routes/todoRoutes.js",
+      "unit_type": "route",
+      "name": "PUT /:id",
+      "start_line": 12,
+      "end_line": 13,
+      "source": "router.put(\"/:id\", updateTodo);\nrouter.delete(\"/:id\", deleteTodo);",
+      "calls": [
+        "router.put",
+        "router.delete"
+      ],
+      "dependencies": [
+        "updateTodo",
+        "deleteTodo"
+      ],
+      "template_kind": "route",
+      "risk_level": "high",
+      "mock_plan": {
+        "target_unit_id": "route:backend\\routes\\todoRoutes.js:PUT /:id:12",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../controllers/todoController",
+            "binding": "getTodos",
+            "dependency_type": "local_module",
+            "methods": [
+              "getTodos",
+              "createTodo",
+              "updateTodo",
+              "deleteTodo",
+              "todoController"
+            ],
+            "resolved_path": "backend/controllers/todoController.js"
+          }
+        ],
+        "inline_stubs": [
+          "req",
+          "res"
+        ],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "route:backend\\routes\\todoRoutes.js:DELETE /:id:13",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-todo-app\\mern-todo-app\\backend\\routes\\todoRoutes.js",
+      "relative_path": "backend/routes/todoRoutes.js",
+      "unit_type": "route",
+      "name": "DELETE /:id",
+      "start_line": 13,
+      "end_line": 15,
+      "source": "router.delete(\"/:id\", deleteTodo);\n\nmodule.exports = router;",
+      "calls": [
+        "router.delete"
+      ],
+      "dependencies": [
+        "deleteTodo"
+      ],
+      "template_kind": "route",
+      "risk_level": "high",
+      "mock_plan": {
+        "target_unit_id": "route:backend\\routes\\todoRoutes.js:DELETE /:id:13",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../controllers/todoController",
+            "binding": "getTodos",
+            "dependency_type": "local_module",
+            "methods": [
+              "getTodos",
+              "createTodo",
+              "updateTodo",
+              "deleteTodo",
+              "todoController"
+            ],
+            "resolved_path": "backend/controllers/todoController.js"
+          }
+        ],
+        "inline_stubs": [
+          "req",
+          "res"
+        ],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "dotenv",
+      "import_path": "dotenv",
+      "dependency_type": "unknown",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "express",
+      "import_path": "express",
+      "dependency_type": "framework",
+      "methods": [
+        "json"
+      ],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "cors",
+      "import_path": "cors",
+      "dependency_type": "unknown",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "connectDB",
+      "import_path": "./config/db",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/config/db.js",
+      "side_effect_level": "database",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "todoRoutes",
+      "import_path": "./routes/todoRoutes",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/routes/todoRoutes.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "process.env",
+      "import_path": "global:process.env",
+      "dependency_type": "env",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "environment",
+      "mock_strategy": "inline_stub"
+    },
+    {
+      "name": "defineConfig",
+      "import_path": "vite",
+      "dependency_type": "unknown",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "react",
+      "import_path": "@vitejs/plugin-react",
+      "dependency_type": "unknown",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "axios",
+      "import_path": "axios",
+      "dependency_type": "axios_client",
+      "methods": [
+        "delete",
+        "get",
+        "post",
+        "put"
+      ],
+      "resolved_path": null,
+      "side_effect_level": "external",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "useEffect",
+      "import_path": "react",
+      "dependency_type": "framework",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "useState",
+      "import_path": "react",
+      "dependency_type": "framework",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "TodoForm",
+      "import_path": "./components/TodoForm.jsx",
+      "dependency_type": "local_module",
+      "methods": [
+        "jsx"
+      ],
+      "resolved_path": "frontend/src/components/TodoForm.jsx",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "TodoList",
+      "import_path": "./components/TodoList.jsx",
+      "dependency_type": "local_module",
+      "methods": [
+        "jsx"
+      ],
+      "resolved_path": "frontend/src/components/TodoList.jsx",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "getTodos",
+      "import_path": "./api.js",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "frontend/src/api.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "createTodo",
+      "import_path": "./api.js",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "frontend/src/api.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "updateTodo",
+      "import_path": "./api.js",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "frontend/src/api.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "deleteTodo",
+      "import_path": "./api.js",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "frontend/src/api.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "React",
+      "import_path": "react",
+      "dependency_type": "framework",
+      "methods": [
+        "StrictMode"
+      ],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "ReactDOM",
+      "import_path": "react-dom/client",
+      "dependency_type": "unknown",
+      "methods": [
+        "createRoot"
+      ],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "App",
+      "import_path": "./App.jsx",
+      "dependency_type": "local_module",
+      "methods": [
+        "jsx"
+      ],
+      "resolved_path": "frontend/src/App.jsx",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "index.css",
+      "import_path": "./index.css",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "frontend/src/index.css",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "TodoItem",
+      "import_path": "./TodoItem.jsx",
+      "dependency_type": "local_module",
+      "methods": [
+        "jsx"
+      ],
+      "resolved_path": "frontend/src/components/TodoItem.jsx",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "mongoose",
+      "import_path": "mongoose",
+      "dependency_type": "unknown",
+      "methods": [
+        "connect"
+      ],
+      "resolved_path": null,
+      "side_effect_level": "database",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "Todo",
+      "import_path": "../models/Todo",
+      "dependency_type": "mongoose_model",
+      "methods": [
+        "create",
+        "find",
+        "findByIdAndDelete",
+        "findByIdAndUpdate"
+      ],
+      "resolved_path": "backend/models/Todo.js",
+      "side_effect_level": "database",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "getTodos",
+      "import_path": "../controllers/todoController",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/controllers/todoController.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "createTodo",
+      "import_path": "../controllers/todoController",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/controllers/todoController.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "updateTodo",
+      "import_path": "../controllers/todoController",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/controllers/todoController.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "deleteTodo",
+      "import_path": "../controllers/todoController",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/controllers/todoController.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "todoController",
+      "import_path": "../controllers/todoController",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/controllers/todoController.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    }
+  ],
+  "call_edges": [
+    {
+      "caller_id": "function:frontend\\src\\api.js:getTodos:5",
+      "callee": "axios.get",
+      "line": 5
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:getTodos:5",
+      "callee": "axios.post",
+      "line": 7
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:createTodo:7",
+      "callee": "axios.post",
+      "line": 7
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:updateTodo:9",
+      "callee": "axios.put",
+      "line": 9
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:updateTodo:9",
+      "callee": "axios.delete",
+      "line": 11
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:deleteTodo:11",
+      "callee": "axios.delete",
+      "line": 11
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "App",
+      "line": 6
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "useState",
+      "line": 7
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "async",
+      "line": 9
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "getTodos",
+      "line": 10
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "setTodos",
+      "line": 11
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "useEffect",
+      "line": 14
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "fetchTodos",
+      "line": 15
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "async",
+      "line": 18
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "createTodo",
+      "line": 19
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "setTodos",
+      "line": 20
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "async",
+      "line": 23
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "updateTodo",
+      "line": 24
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "setTodos",
+      "line": 25
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "todos.map",
+      "line": 25
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "async",
+      "line": 28
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "deleteTodo",
+      "line": 29
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "setTodos",
+      "line": 30
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "todos.filter",
+      "line": 30
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:6",
+      "callee": "return",
+      "line": 33
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+      "callee": "TodoForm",
+      "line": 3
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+      "callee": "useState",
+      "line": 4
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+      "callee": "e.preventDefault",
+      "line": 7
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+      "callee": "text.trim",
+      "line": 8
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+      "callee": "onAdd",
+      "line": 9
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+      "callee": "setText",
+      "line": 10
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+      "callee": "return",
+      "line": 13
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+      "callee": "setText",
+      "line": 18
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoItem.jsx:TodoItem:1",
+      "callee": "TodoItem",
+      "line": 1
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoItem.jsx:TodoItem:1",
+      "callee": "return",
+      "line": 2
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoItem.jsx:TodoItem:1",
+      "callee": "onToggle",
+      "line": 6
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoItem.jsx:TodoItem:1",
+      "callee": "onDelete",
+      "line": 10
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoList.jsx:TodoList:3",
+      "callee": "TodoList",
+      "line": 3
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoList.jsx:TodoList:3",
+      "callee": "return",
+      "line": 8
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\TodoList.jsx:TodoList:3",
+      "callee": "todos.map",
+      "line": 10
+    },
+    {
+      "caller_id": "function:backend\\config\\db.js:connectDB:3",
+      "callee": "async",
+      "line": 3
+    },
+    {
+      "caller_id": "function:backend\\config\\db.js:connectDB:3",
+      "callee": "mongoose.connect",
+      "line": 5
+    },
+    {
+      "caller_id": "function:backend\\config\\db.js:connectDB:3",
+      "callee": "console.log",
+      "line": 6
+    },
+    {
+      "caller_id": "function:backend\\config\\db.js:connectDB:3",
+      "callee": "console.error",
+      "line": 8
+    },
+    {
+      "caller_id": "function:backend\\config\\db.js:connectDB:3",
+      "callee": "process.exit",
+      "line": 9
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:getTodos:4",
+      "callee": "async",
+      "line": 4
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:getTodos:4",
+      "callee": "Todo.find",
+      "line": 5
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:getTodos:4",
+      "callee": "sort",
+      "line": 5
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:getTodos:4",
+      "callee": "res.json",
+      "line": 6
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:createTodo:10",
+      "callee": "async",
+      "line": 10
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:createTodo:10",
+      "callee": "res.status",
+      "line": 13
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:createTodo:10",
+      "callee": "json",
+      "line": 13
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:createTodo:10",
+      "callee": "Todo.create",
+      "line": 15
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:createTodo:10",
+      "callee": "res.status",
+      "line": 16
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:createTodo:10",
+      "callee": "json",
+      "line": 16
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:updateTodo:20",
+      "callee": "async",
+      "line": 20
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:updateTodo:20",
+      "callee": "Todo.findByIdAndUpdate",
+      "line": 22
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:updateTodo:20",
+      "callee": "res.status",
+      "line": 24
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:updateTodo:20",
+      "callee": "json",
+      "line": 24
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:updateTodo:20",
+      "callee": "res.json",
+      "line": 26
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:deleteTodo:30",
+      "callee": "async",
+      "line": 30
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:deleteTodo:30",
+      "callee": "Todo.findByIdAndDelete",
+      "line": 32
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:deleteTodo:30",
+      "callee": "res.status",
+      "line": 34
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:deleteTodo:30",
+      "callee": "json",
+      "line": 34
+    },
+    {
+      "caller_id": "function:backend\\controllers\\todoController.js:deleteTodo:30",
+      "callee": "res.json",
+      "line": 36
+    },
+    {
+      "caller_id": "model:backend\\models\\Todo.js:Todo:3",
+      "callee": "mongoose.Schema",
+      "line": 3
+    },
+    {
+      "caller_id": "route:backend\\routes\\todoRoutes.js:GET /:10",
+      "callee": "router.get",
+      "line": 10
+    },
+    {
+      "caller_id": "route:backend\\routes\\todoRoutes.js:GET /:10",
+      "callee": "router.post",
+      "line": 11
+    },
+    {
+      "caller_id": "route:backend\\routes\\todoRoutes.js:POST /:11",
+      "callee": "router.post",
+      "line": 11
+    },
+    {
+      "caller_id": "route:backend\\routes\\todoRoutes.js:POST /:11",
+      "callee": "router.put",
+      "line": 12
+    },
+    {
+      "caller_id": "route:backend\\routes\\todoRoutes.js:PUT /:id:12",
+      "callee": "router.put",
+      "line": 12
+    },
+    {
+      "caller_id": "route:backend\\routes\\todoRoutes.js:PUT /:id:12",
+      "callee": "router.delete",
+      "line": 13
+    },
+    {
+      "caller_id": "route:backend\\routes\\todoRoutes.js:DELETE /:id:13",
+      "callee": "router.delete",
+      "line": 13
+    }
+  ],
+  "warnings": []
+}

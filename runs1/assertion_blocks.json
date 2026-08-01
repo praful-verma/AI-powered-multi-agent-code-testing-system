@@ -1,0 +1,148 @@
+{
+  "assertions": [
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:getTodos:5",
+      "scenario_name": "getTodos performs its expected behavior",
+      "body": "const subject = targetModule.getTodos || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:createTodo:7",
+      "scenario_name": "createTodo performs its expected behavior",
+      "body": "const subject = targetModule.createTodo || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:updateTodo:9",
+      "scenario_name": "updateTodo performs its expected behavior",
+      "body": "const subject = targetModule.updateTodo || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:deleteTodo:11",
+      "scenario_name": "deleteTodo performs its expected behavior",
+      "body": "const subject = targetModule.deleteTodo || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "component:frontend\\src\\App.jsx:App:6",
+      "scenario_name": "App renders its primary state",
+      "body": "render(<ComponentUnderTest />);\nexpect(document.body).toBeTruthy();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+      "scenario_name": "TodoForm renders its primary state",
+      "body": "render(<ComponentUnderTest />);\nexpect(document.body).toBeTruthy();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "component:frontend\\src\\components\\TodoItem.jsx:TodoItem:1",
+      "scenario_name": "TodoItem renders its primary state",
+      "body": "render(<ComponentUnderTest />);\nexpect(document.body).toBeTruthy();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "component:frontend\\src\\components\\TodoList.jsx:TodoList:3",
+      "scenario_name": "TodoList renders its primary state",
+      "body": "render(<ComponentUnderTest />);\nexpect(document.body).toBeTruthy();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:backend\\config\\db.js:connectDB:3",
+      "scenario_name": "connectDB performs its expected behavior",
+      "body": "const subject = targetModule.connectDB || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\todoController.js:getTodos:4",
+      "scenario_name": "getTodos performs its expected behavior",
+      "body": "const subject = targetModule.getTodos || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\todoController.js:createTodo:10",
+      "scenario_name": "createTodo performs its expected behavior",
+      "body": "const subject = targetModule.createTodo || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\todoController.js:updateTodo:20",
+      "scenario_name": "updateTodo performs its expected behavior",
+      "body": "const subject = targetModule.updateTodo || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\todoController.js:deleteTodo:30",
+      "scenario_name": "deleteTodo performs its expected behavior",
+      "body": "const subject = targetModule.deleteTodo || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "model:backend\\models\\Todo.js:Todo:3",
+      "scenario_name": "Todo performs its expected behavior",
+      "body": "const subject = targetModule.Todo || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\todoRoutes.js:GET /:10",
+      "scenario_name": "GET / routes requests through isolated handlers",
+      "body": "const response = await request(app).get('/');\nexpect(response.status).toBeLessThan(500);",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\todoRoutes.js:POST /:11",
+      "scenario_name": "POST / routes requests through isolated handlers",
+      "body": "const response = await request(app).post('/');\nexpect(response.status).toBeLessThan(500);",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\todoRoutes.js:PUT /:id:12",
+      "scenario_name": "PUT /:id routes requests through isolated handlers",
+      "body": "const response = await request(app).put('/test-id');\nexpect(response.status).toBeLessThan(500);",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\todoRoutes.js:DELETE /:id:13",
+      "scenario_name": "DELETE /:id routes requests through isolated handlers",
+      "body": "const response = await request(app).delete('/test-id');\nexpect(response.status).toBeLessThan(500);",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    }
+  ]
+}

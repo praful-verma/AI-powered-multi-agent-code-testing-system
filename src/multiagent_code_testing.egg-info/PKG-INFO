@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: multiagent-code-testing
+Version: 0.1.0
+Summary: LangGraph multi-agent code testing system with MERN adapter and Groq-backed agents.
+Requires-Python: >=3.10
+Requires-Dist: gitpython>=3.1.43
+Requires-Dist: langchain>=0.2.14
+Requires-Dist: langchain-groq>=0.1.9
+Requires-Dist: langgraph>=0.2.14
+Requires-Dist: langgraph-checkpoint-sqlite>=1.0.0
+Requires-Dist: openpyxl>=3.1.5
+Requires-Dist: pydantic>=2.7.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: tiktoken>=0.7.0

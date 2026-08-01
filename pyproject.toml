@@ -1,0 +1,26 @@
+[project]
+name = "multiagent-code-testing"
+version = "0.1.0"
+description = "LangGraph multi-agent code testing system with MERN adapter and Groq-backed agents."
+requires-python = ">=3.10"
+dependencies = [
+    "gitpython>=3.1.43",
+    "langchain>=0.2.14",
+    "langchain-groq>=0.1.9",
+    "langgraph>=0.2.14",
+    "langgraph-checkpoint-sqlite>=1.0.0",
+    "openpyxl>=3.1.5",
+    "pydantic>=2.7.0",
+    "python-dotenv>=1.0.1",
+    "tiktoken>=0.7.0",
+]
+
+[project.scripts]
+multiagent-test = "multiagent_testing.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

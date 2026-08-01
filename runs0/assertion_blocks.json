@@ -1,0 +1,188 @@
+{
+  "assertions": [
+    {
+      "target_unit_id": "route:backend\\server.js:GET /api/health:14",
+      "scenario_name": "GET /api/health routes requests through isolated handlers",
+      "body": "const response = await request(app).get('/api/health');\nexpect(response.status).toBeLessThan(500);",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:getBooks:5",
+      "scenario_name": "getBooks performs its expected behavior",
+      "body": "const subject = targetModule.getBooks || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:getBookById:10",
+      "scenario_name": "getBookById performs its expected behavior",
+      "body": "const subject = targetModule.getBookById || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:addBook:15",
+      "scenario_name": "addBook performs its expected behavior",
+      "body": "const subject = targetModule.addBook || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:updateBook:20",
+      "scenario_name": "updateBook performs its expected behavior",
+      "body": "const subject = targetModule.updateBook || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:deleteBook:25",
+      "scenario_name": "deleteBook performs its expected behavior",
+      "body": "const subject = targetModule.deleteBook || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "component:frontend\\src\\App.jsx:App:4",
+      "scenario_name": "App renders its primary state",
+      "body": "render(<ComponentUnderTest />);\nexpect(document.body).toBeTruthy();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\utils.js:formatRating:1",
+      "scenario_name": "formatRating performs its expected behavior",
+      "body": "const subject = targetModule.formatRating || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\utils.js:sortBooksByTitle:10",
+      "scenario_name": "sortBooksByTitle performs its expected behavior",
+      "body": "const subject = targetModule.sortBooksByTitle || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\utils.js:filterUnreadBooks:15",
+      "scenario_name": "filterUnreadBooks performs its expected behavior",
+      "body": "const subject = targetModule.filterUnreadBooks || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "scenario_name": "BookList renders its primary state",
+      "body": "render(<ComponentUnderTest />);\nexpect(document.body).toBeTruthy();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\bookController.js:getBooks:4",
+      "scenario_name": "getBooks performs its expected behavior",
+      "body": "const subject = targetModule.getBooks || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\bookController.js:getBookById:20",
+      "scenario_name": "getBookById performs its expected behavior",
+      "body": "const subject = targetModule.getBookById || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\bookController.js:addBook:32",
+      "scenario_name": "addBook performs its expected behavior",
+      "body": "const subject = targetModule.addBook || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "scenario_name": "updateBook performs its expected behavior",
+      "body": "const subject = targetModule.updateBook || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+      "scenario_name": "deleteBook performs its expected behavior",
+      "body": "const subject = targetModule.deleteBook || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "model:backend\\models\\Book.js:Book:3",
+      "scenario_name": "Book performs its expected behavior",
+      "body": "const subject = targetModule.Book || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\bookRoutes.js:GET /:12",
+      "scenario_name": "GET / routes requests through isolated handlers",
+      "body": "const response = await request(app).get('/');\nexpect(response.status).toBeLessThan(500);",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\bookRoutes.js:GET /:id:13",
+      "scenario_name": "GET /:id routes requests through isolated handlers",
+      "body": "const response = await request(app).get('/test-id');\nexpect(response.status).toBeLessThan(500);",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\bookRoutes.js:POST /:14",
+      "scenario_name": "POST / routes requests through isolated handlers",
+      "body": "const response = await request(app).post('/');\nexpect(response.status).toBeLessThan(500);",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\bookRoutes.js:PUT /:id:15",
+      "scenario_name": "PUT /:id routes requests through isolated handlers",
+      "body": "const response = await request(app).put('/test-id');\nexpect(response.status).toBeLessThan(500);",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\bookRoutes.js:DELETE /:id:16",
+      "scenario_name": "DELETE /:id routes requests through isolated handlers",
+      "body": "const response = await request(app).delete('/test-id');\nexpect(response.status).toBeLessThan(500);",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    },
+    {
+      "target_unit_id": "function:backend\\utils\\validateBook.js:validateBook:1",
+      "scenario_name": "validateBook performs its expected behavior",
+      "body": "const subject = targetModule.validateBook || targetModule.default || targetModule;\nexpect(subject).toBeDefined();",
+      "notes": [
+        "Generated deterministic assertion fragment from repository graph metadata."
+      ]
+    }
+  ]
+}

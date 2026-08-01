@@ -1,0 +1,3604 @@
+{
+  "root_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app",
+  "stack": "mern",
+  "test_framework": "jest",
+  "files": [
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\server.js",
+      "relative_path": "backend/server.js",
+      "language": "js",
+      "stack_area": "backend",
+      "file_role": "utility",
+      "imports": [
+        {
+          "source": "express",
+          "bindings": [
+            "express"
+          ],
+          "line": 1,
+          "import_kind": "require",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "cors",
+          "bindings": [
+            "cors"
+          ],
+          "line": 2,
+          "import_kind": "require",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "mongoose",
+          "bindings": [
+            "mongoose"
+          ],
+          "line": 3,
+          "import_kind": "require",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "dotenv",
+          "bindings": [],
+          "line": 4,
+          "import_kind": "side_effect",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "./routes/bookRoutes",
+          "bindings": [
+            "bookRoutes"
+          ],
+          "line": 6,
+          "import_kind": "require",
+          "resolved_path": "backend/routes/bookRoutes.js",
+          "is_external": false
+        }
+      ],
+      "exports": [
+        {
+          "name": "default",
+          "line": 33,
+          "export_kind": "commonjs"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "express",
+          "import_path": "express",
+          "dependency_type": "framework",
+          "methods": [
+            "json"
+          ],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "cors",
+          "import_path": "cors",
+          "dependency_type": "unknown",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "mongoose",
+          "import_path": "mongoose",
+          "dependency_type": "unknown",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "database",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "dotenv",
+          "import_path": "dotenv",
+          "dependency_type": "unknown",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "bookRoutes",
+          "import_path": "./routes/bookRoutes",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/routes/bookRoutes.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "process.env",
+          "import_path": "global:process.env",
+          "dependency_type": "env",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "environment",
+          "mock_strategy": "inline_stub"
+        }
+      ],
+      "units": [
+        {
+          "id": "route:backend\\server.js:GET /api/health:14",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\server.js",
+          "relative_path": "backend/server.js",
+          "unit_type": "route",
+          "name": "GET /api/health",
+          "start_line": 14,
+          "end_line": 16,
+          "source": "app.get('/api/health', (req, res) => {\n  res.status(200).json({ status: 'ok' });\n});",
+          "calls": [
+            "app.get",
+            "res.status",
+            "json"
+          ],
+          "dependencies": [],
+          "template_kind": "route",
+          "risk_level": "high",
+          "mock_plan": {
+            "target_unit_id": "route:backend\\server.js:GET /api/health:14",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "./routes/bookRoutes",
+                "binding": "bookRoutes",
+                "dependency_type": "local_module",
+                "methods": [
+                  "bookRoutes"
+                ],
+                "resolved_path": "backend/routes/bookRoutes.js"
+              }
+            ],
+            "inline_stubs": [
+              "process.env",
+              "req",
+              "res"
+            ],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "e1c37fcaa3fe32c4fbe7ddc4e2a8fdc84108a4b6"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\vite.config.js",
+      "relative_path": "frontend/vite.config.js",
+      "language": "js",
+      "stack_area": "frontend",
+      "file_role": "utility",
+      "imports": [
+        {
+          "source": "vite",
+          "bindings": [
+            "defineConfig"
+          ],
+          "line": 1,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "@vitejs/plugin-react",
+          "bindings": [
+            "react"
+          ],
+          "line": 2,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        }
+      ],
+      "exports": [
+        {
+          "name": "defineConfig",
+          "line": 4,
+          "export_kind": "default"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "defineConfig",
+          "import_path": "vite",
+          "dependency_type": "unknown",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "react",
+          "import_path": "@vitejs/plugin-react",
+          "dependency_type": "unknown",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        }
+      ],
+      "units": [],
+      "source_hash": "b3736d129d23759512bd4d2e4b7e4a374e40ab49"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\api.js",
+      "relative_path": "frontend/src/api.js",
+      "language": "js",
+      "stack_area": "frontend",
+      "file_role": "api_helper",
+      "imports": [
+        {
+          "source": "axios",
+          "bindings": [
+            "axios"
+          ],
+          "line": 1,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        }
+      ],
+      "exports": [
+        {
+          "name": "getBooks",
+          "line": 5,
+          "export_kind": "named"
+        },
+        {
+          "name": "getBookById",
+          "line": 10,
+          "export_kind": "named"
+        },
+        {
+          "name": "addBook",
+          "line": 15,
+          "export_kind": "named"
+        },
+        {
+          "name": "updateBook",
+          "line": 20,
+          "export_kind": "named"
+        },
+        {
+          "name": "deleteBook",
+          "line": 25,
+          "export_kind": "named"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "axios",
+          "import_path": "axios",
+          "dependency_type": "axios_client",
+          "methods": [
+            "delete",
+            "get",
+            "post",
+            "put"
+          ],
+          "resolved_path": null,
+          "side_effect_level": "external",
+          "mock_strategy": "module_mock"
+        }
+      ],
+      "units": [
+        {
+          "id": "function:frontend\\src\\api.js:getBooks:5",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\api.js",
+          "relative_path": "frontend/src/api.js",
+          "unit_type": "function",
+          "name": "getBooks",
+          "start_line": 5,
+          "end_line": 8,
+          "source": "export async function getBooks(filters = {}) {\n  const response = await axios.get(API_URL, { params: filters });\n  return response.data;\n}",
+          "calls": [
+            "getBooks",
+            "axios.get"
+          ],
+          "dependencies": [
+            "axios"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:frontend\\src\\api.js:getBooks:5",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "axios",
+                "binding": "axios",
+                "dependency_type": "axios_client",
+                "methods": [
+                  "delete",
+                  "get",
+                  "post",
+                  "put"
+                ],
+                "resolved_path": null
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Mock axios in every API-helper test to avoid live network calls."
+            ]
+          }
+        },
+        {
+          "id": "function:frontend\\src\\api.js:getBookById:10",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\api.js",
+          "relative_path": "frontend/src/api.js",
+          "unit_type": "function",
+          "name": "getBookById",
+          "start_line": 10,
+          "end_line": 13,
+          "source": "export async function getBookById(id) {\n  const response = await axios.get(`${API_URL}/${id}`);\n  return response.data;\n}",
+          "calls": [
+            "getBookById",
+            "axios.get"
+          ],
+          "dependencies": [
+            "axios"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:frontend\\src\\api.js:getBookById:10",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "axios",
+                "binding": "axios",
+                "dependency_type": "axios_client",
+                "methods": [
+                  "delete",
+                  "get",
+                  "post",
+                  "put"
+                ],
+                "resolved_path": null
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Mock axios in every API-helper test to avoid live network calls."
+            ]
+          }
+        },
+        {
+          "id": "function:frontend\\src\\api.js:addBook:15",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\api.js",
+          "relative_path": "frontend/src/api.js",
+          "unit_type": "function",
+          "name": "addBook",
+          "start_line": 15,
+          "end_line": 18,
+          "source": "export async function addBook(book) {\n  const response = await axios.post(API_URL, book);\n  return response.data;\n}",
+          "calls": [
+            "addBook",
+            "axios.post"
+          ],
+          "dependencies": [
+            "axios"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:frontend\\src\\api.js:addBook:15",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "axios",
+                "binding": "axios",
+                "dependency_type": "axios_client",
+                "methods": [
+                  "delete",
+                  "get",
+                  "post",
+                  "put"
+                ],
+                "resolved_path": null
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Mock axios in every API-helper test to avoid live network calls."
+            ]
+          }
+        },
+        {
+          "id": "function:frontend\\src\\api.js:updateBook:20",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\api.js",
+          "relative_path": "frontend/src/api.js",
+          "unit_type": "function",
+          "name": "updateBook",
+          "start_line": 20,
+          "end_line": 23,
+          "source": "export async function updateBook(id, updates) {\n  const response = await axios.put(`${API_URL}/${id}`, updates);\n  return response.data;\n}",
+          "calls": [
+            "updateBook",
+            "axios.put"
+          ],
+          "dependencies": [
+            "axios"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:frontend\\src\\api.js:updateBook:20",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "axios",
+                "binding": "axios",
+                "dependency_type": "axios_client",
+                "methods": [
+                  "delete",
+                  "get",
+                  "post",
+                  "put"
+                ],
+                "resolved_path": null
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Mock axios in every API-helper test to avoid live network calls."
+            ]
+          }
+        },
+        {
+          "id": "function:frontend\\src\\api.js:deleteBook:25",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\api.js",
+          "relative_path": "frontend/src/api.js",
+          "unit_type": "function",
+          "name": "deleteBook",
+          "start_line": 25,
+          "end_line": 28,
+          "source": "export async function deleteBook(id) {\n  const response = await axios.delete(`${API_URL}/${id}`);\n  return response.data;\n}",
+          "calls": [
+            "deleteBook",
+            "axios.delete"
+          ],
+          "dependencies": [
+            "axios"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:frontend\\src\\api.js:deleteBook:25",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "axios",
+                "binding": "axios",
+                "dependency_type": "axios_client",
+                "methods": [
+                  "delete",
+                  "get",
+                  "post",
+                  "put"
+                ],
+                "resolved_path": null
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Mock axios in every API-helper test to avoid live network calls."
+            ]
+          }
+        }
+      ],
+      "source_hash": "6d080d2055c6226f7180826197a3a7a2f74d7e9f"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\App.jsx",
+      "relative_path": "frontend/src/App.jsx",
+      "language": "jsx",
+      "stack_area": "frontend",
+      "file_role": "component",
+      "imports": [
+        {
+          "source": "react",
+          "bindings": [
+            "React"
+          ],
+          "line": 1,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "./components/BookList",
+          "bindings": [
+            "BookList"
+          ],
+          "line": 2,
+          "import_kind": "import",
+          "resolved_path": "frontend/src/components/BookList.jsx",
+          "is_external": false
+        }
+      ],
+      "exports": [
+        {
+          "name": "function",
+          "line": 4,
+          "export_kind": "default"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "React",
+          "import_path": "react",
+          "dependency_type": "framework",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "BookList",
+          "import_path": "./components/BookList",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "frontend/src/components/BookList.jsx",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        }
+      ],
+      "units": [
+        {
+          "id": "component:frontend\\src\\App.jsx:App:4",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\App.jsx",
+          "relative_path": "frontend/src/App.jsx",
+          "unit_type": "component",
+          "name": "App",
+          "start_line": 4,
+          "end_line": 11,
+          "source": "export default function App() {\n  return (\n    <div>\n      <h1>My Bookshelf</h1>\n      <BookList />\n    </div>\n  );\n}",
+          "calls": [
+            "App",
+            "return"
+          ],
+          "dependencies": [
+            "BookList"
+          ],
+          "template_kind": "component",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "component:frontend\\src\\App.jsx:App:4",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "./components/BookList",
+                "binding": "BookList",
+                "dependency_type": "local_module",
+                "methods": [
+                  "BookList"
+                ],
+                "resolved_path": "frontend/src/components/BookList.jsx"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "a8a9e9ac969fdd3adc712cfc8838c54444ba484d"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\main.jsx",
+      "relative_path": "frontend/src/main.jsx",
+      "language": "jsx",
+      "stack_area": "frontend",
+      "file_role": "component",
+      "imports": [
+        {
+          "source": "react",
+          "bindings": [
+            "React"
+          ],
+          "line": 1,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "react-dom/client",
+          "bindings": [
+            "ReactDOM"
+          ],
+          "line": 2,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "./App",
+          "bindings": [
+            "App"
+          ],
+          "line": 3,
+          "import_kind": "import",
+          "resolved_path": "frontend/src/App.jsx",
+          "is_external": false
+        }
+      ],
+      "exports": [],
+      "dependencies": [
+        {
+          "name": "React",
+          "import_path": "react",
+          "dependency_type": "framework",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "ReactDOM",
+          "import_path": "react-dom/client",
+          "dependency_type": "unknown",
+          "methods": [
+            "createRoot"
+          ],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "App",
+          "import_path": "./App",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "frontend/src/App.jsx",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        }
+      ],
+      "units": [],
+      "source_hash": "67a68e1ad12405c0c7bb31dcafce79282bf751d0"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\utils.js",
+      "relative_path": "frontend/src/utils.js",
+      "language": "js",
+      "stack_area": "frontend",
+      "file_role": "utility",
+      "imports": [],
+      "exports": [
+        {
+          "name": "formatRating",
+          "line": 1,
+          "export_kind": "named"
+        },
+        {
+          "name": "sortBooksByTitle",
+          "line": 10,
+          "export_kind": "named"
+        },
+        {
+          "name": "filterUnreadBooks",
+          "line": 15,
+          "export_kind": "named"
+        }
+      ],
+      "dependencies": [],
+      "units": [
+        {
+          "id": "function:frontend\\src\\utils.js:formatRating:1",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\utils.js",
+          "relative_path": "frontend/src/utils.js",
+          "unit_type": "function",
+          "name": "formatRating",
+          "start_line": 1,
+          "end_line": 8,
+          "source": "export function formatRating(rating) {\n  const num = Number(rating);\n  if (Number.isNaN(num) || num < 0) {\n    return 'Unrated';\n  }\n  const clamped = Math.min(num, 5);\n  return `${'\u2605'.repeat(Math.round(clamped))}${'\u2606'.repeat(5 - Math.round(clamped))}`;\n}",
+          "calls": [
+            "formatRating",
+            "Number",
+            "Number.isNaN",
+            "Math.min",
+            "repeat",
+            "Math.round"
+          ],
+          "dependencies": [],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:frontend\\src\\utils.js:formatRating:1",
+            "framework": "jest",
+            "module_mocks": [],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        },
+        {
+          "id": "function:frontend\\src\\utils.js:sortBooksByTitle:10",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\utils.js",
+          "relative_path": "frontend/src/utils.js",
+          "unit_type": "function",
+          "name": "sortBooksByTitle",
+          "start_line": 10,
+          "end_line": 13,
+          "source": "export function sortBooksByTitle(books) {\n  if (!Array.isArray(books)) return [];\n  return [...books].sort((a, b) => a.title.localeCompare(b.title));\n}",
+          "calls": [
+            "sortBooksByTitle",
+            "Array.isArray",
+            "sort",
+            "title.localeCompare"
+          ],
+          "dependencies": [],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:frontend\\src\\utils.js:sortBooksByTitle:10",
+            "framework": "jest",
+            "module_mocks": [],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        },
+        {
+          "id": "function:frontend\\src\\utils.js:filterUnreadBooks:15",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\utils.js",
+          "relative_path": "frontend/src/utils.js",
+          "unit_type": "function",
+          "name": "filterUnreadBooks",
+          "start_line": 15,
+          "end_line": 18,
+          "source": "export function filterUnreadBooks(books) {\n  if (!Array.isArray(books)) return [];\n  return books.filter((book) => !book.isRead);\n}",
+          "calls": [
+            "filterUnreadBooks",
+            "Array.isArray",
+            "books.filter"
+          ],
+          "dependencies": [],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:frontend\\src\\utils.js:filterUnreadBooks:15",
+            "framework": "jest",
+            "module_mocks": [],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "a7494cc8c69794e400766fe86821548db3b6984b"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\components\\BookList.jsx",
+      "relative_path": "frontend/src/components/BookList.jsx",
+      "language": "jsx",
+      "stack_area": "frontend",
+      "file_role": "component",
+      "imports": [
+        {
+          "source": "react",
+          "bindings": [
+            "React",
+            "useEffect",
+            "useState"
+          ],
+          "line": 1,
+          "import_kind": "import",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "../api",
+          "bindings": [
+            "getBooks",
+            "deleteBook"
+          ],
+          "line": 2,
+          "import_kind": "import",
+          "resolved_path": "frontend/src/api.js",
+          "is_external": false
+        },
+        {
+          "source": "../utils",
+          "bindings": [
+            "formatRating"
+          ],
+          "line": 3,
+          "import_kind": "import",
+          "resolved_path": "frontend/src/utils.js",
+          "is_external": false
+        }
+      ],
+      "exports": [
+        {
+          "name": "function",
+          "line": 5,
+          "export_kind": "default"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "React",
+          "import_path": "react",
+          "dependency_type": "framework",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "useEffect",
+          "import_path": "react",
+          "dependency_type": "framework",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "useState",
+          "import_path": "react",
+          "dependency_type": "framework",
+          "methods": [],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "getBooks",
+          "import_path": "../api",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "frontend/src/api.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "deleteBook",
+          "import_path": "../api",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "frontend/src/api.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "formatRating",
+          "import_path": "../utils",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "frontend/src/utils.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        }
+      ],
+      "units": [
+        {
+          "id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\components\\BookList.jsx",
+          "relative_path": "frontend/src/components/BookList.jsx",
+          "unit_type": "component",
+          "name": "BookList",
+          "start_line": 5,
+          "end_line": 36,
+          "source": "export default function BookList() {\n  const [books, setBooks] = useState([]);\n  const [loading, setLoading] = useState(true);\n  const [error, setError] = useState(null);\n\n  useEffect(() => {\n    getBooks()\n      .then((data) => setBooks(data))\n      .catch((err) => setError(err.message))\n      .finally(() => setLoading(false));\n  }, []);\n\n  async function handleDelete(id) {\n    await deleteBook(id);\n    setBooks((prev) => prev.filter((book) => book._id !== id));\n  }\n\n  if (loading) return <p>Loading books...</p>;\n  if (error) return <p role=\"alert\">Error: {error}</p>;\n\n  return (\n    <ul aria-label=\"book-list\">\n      {books.map((book) => (\n        <li key={book._id}>\n          <span>{book.title}</span> by <span>{book.author}</span>{' '}\n          <span>{formatRating(book.rating)}</span>\n          <button onClick={() => handleDelete(book._id)}>Remove</button>\n        </li>\n      ))}\n    </ul>\n  );\n}",
+          "calls": [
+            "BookList",
+            "useState",
+            "useState",
+            "useState",
+            "useEffect",
+            "getBooks",
+            "then",
+            "setBooks",
+            "setError",
+            "finally",
+            "setLoading",
+            "handleDelete",
+            "deleteBook",
+            "setBooks",
+            "prev.filter",
+            "return",
+            "books.map",
+            "formatRating",
+            "handleDelete"
+          ],
+          "dependencies": [
+            "useEffect",
+            "useState",
+            "getBooks",
+            "deleteBook",
+            "formatRating"
+          ],
+          "template_kind": "component",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../api",
+                "binding": "getBooks",
+                "dependency_type": "local_module",
+                "methods": [
+                  "getBooks",
+                  "deleteBook"
+                ],
+                "resolved_path": "frontend/src/api.js"
+              },
+              {
+                "import_path": "../utils",
+                "binding": "formatRating",
+                "dependency_type": "local_module",
+                "methods": [
+                  "formatRating"
+                ],
+                "resolved_path": "frontend/src/utils.js"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "fbf4860316ffd7a139eb2f1eed7515055f7b5a4a"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\controllers\\bookController.js",
+      "relative_path": "backend/controllers/bookController.js",
+      "language": "js",
+      "stack_area": "backend",
+      "file_role": "controller",
+      "imports": [
+        {
+          "source": "../utils/validateBook",
+          "bindings": [
+            "validateBook"
+          ],
+          "line": 2,
+          "import_kind": "require",
+          "resolved_path": "backend/utils/validateBook.js",
+          "is_external": false
+        },
+        {
+          "source": "../models/Book",
+          "bindings": [
+            "Book"
+          ],
+          "line": 1,
+          "import_kind": "require",
+          "resolved_path": "backend/models/Book.js",
+          "is_external": false
+        }
+      ],
+      "exports": [
+        {
+          "name": "default",
+          "line": 75,
+          "export_kind": "commonjs"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "validateBook",
+          "import_path": "../utils/validateBook",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/utils/validateBook.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "Book",
+          "import_path": "../models/Book",
+          "dependency_type": "mongoose_model",
+          "methods": [
+            "create",
+            "find",
+            "findById",
+            "findByIdAndDelete",
+            "findByIdAndUpdate"
+          ],
+          "resolved_path": "backend/models/Book.js",
+          "side_effect_level": "database",
+          "mock_strategy": "module_mock"
+        }
+      ],
+      "units": [
+        {
+          "id": "function:backend\\controllers\\bookController.js:getBooks:4",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\controllers\\bookController.js",
+          "relative_path": "backend/controllers/bookController.js",
+          "unit_type": "function",
+          "name": "getBooks",
+          "start_line": 4,
+          "end_line": 18,
+          "source": "async function getBooks(req, res) {\n  try {\n    const filter = {};\n    if (req.query.genre) {\n      filter.genre = req.query.genre;\n    }\n    if (req.query.isRead !== undefined) {\n      filter.isRead = req.query.isRead === 'true';\n    }\n    const books = await Book.find(filter).sort({ createdAt: -1 });\n    res.status(200).json(books);\n  } catch (err) {\n    res.status(500).json({ message: 'Failed to fetch books', error: err.message });\n  }\n}",
+          "calls": [
+            "getBooks",
+            "Book.find",
+            "sort",
+            "res.status",
+            "json",
+            "res.status",
+            "json"
+          ],
+          "dependencies": [
+            "Book"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:backend\\controllers\\bookController.js:getBooks:4",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../utils/validateBook",
+                "binding": "validateBook",
+                "dependency_type": "local_module",
+                "methods": [
+                  "validateBook"
+                ],
+                "resolved_path": "backend/utils/validateBook.js"
+              },
+              {
+                "import_path": "../models/Book",
+                "binding": "Book",
+                "dependency_type": "mongoose_model",
+                "methods": [
+                  "create",
+                  "find",
+                  "findById",
+                  "findByIdAndDelete",
+                  "findByIdAndUpdate"
+                ],
+                "resolved_path": "backend/models/Book.js"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+            ]
+          }
+        },
+        {
+          "id": "function:backend\\controllers\\bookController.js:getBookById:20",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\controllers\\bookController.js",
+          "relative_path": "backend/controllers/bookController.js",
+          "unit_type": "function",
+          "name": "getBookById",
+          "start_line": 20,
+          "end_line": 30,
+          "source": "async function getBookById(req, res) {\n  try {\n    const book = await Book.findById(req.params.id);\n    if (!book) {\n      return res.status(404).json({ message: 'Book not found' });\n    }\n    res.status(200).json(book);\n  } catch (err) {\n    res.status(500).json({ message: 'Failed to fetch book', error: err.message });\n  }\n}",
+          "calls": [
+            "getBookById",
+            "Book.findById",
+            "res.status",
+            "json",
+            "res.status",
+            "json",
+            "res.status",
+            "json"
+          ],
+          "dependencies": [
+            "Book"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:backend\\controllers\\bookController.js:getBookById:20",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../utils/validateBook",
+                "binding": "validateBook",
+                "dependency_type": "local_module",
+                "methods": [
+                  "validateBook"
+                ],
+                "resolved_path": "backend/utils/validateBook.js"
+              },
+              {
+                "import_path": "../models/Book",
+                "binding": "Book",
+                "dependency_type": "mongoose_model",
+                "methods": [
+                  "create",
+                  "find",
+                  "findById",
+                  "findByIdAndDelete",
+                  "findByIdAndUpdate"
+                ],
+                "resolved_path": "backend/models/Book.js"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+            ]
+          }
+        },
+        {
+          "id": "function:backend\\controllers\\bookController.js:addBook:32",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\controllers\\bookController.js",
+          "relative_path": "backend/controllers/bookController.js",
+          "unit_type": "function",
+          "name": "addBook",
+          "start_line": 32,
+          "end_line": 43,
+          "source": "async function addBook(req, res) {\n  const { valid, errors } = validateBook(req.body);\n  if (!valid) {\n    return res.status(400).json({ message: 'Validation failed', errors });\n  }\n  try {\n    const book = await Book.create(req.body);\n    res.status(201).json(book);\n  } catch (err) {\n    res.status(500).json({ message: 'Failed to create book', error: err.message });\n  }\n}",
+          "calls": [
+            "addBook",
+            "validateBook",
+            "res.status",
+            "json",
+            "Book.create",
+            "res.status",
+            "json",
+            "res.status",
+            "json"
+          ],
+          "dependencies": [
+            "validateBook",
+            "Book"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:backend\\controllers\\bookController.js:addBook:32",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../utils/validateBook",
+                "binding": "validateBook",
+                "dependency_type": "local_module",
+                "methods": [
+                  "validateBook"
+                ],
+                "resolved_path": "backend/utils/validateBook.js"
+              },
+              {
+                "import_path": "../models/Book",
+                "binding": "Book",
+                "dependency_type": "mongoose_model",
+                "methods": [
+                  "create",
+                  "find",
+                  "findById",
+                  "findByIdAndDelete",
+                  "findByIdAndUpdate"
+                ],
+                "resolved_path": "backend/models/Book.js"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+            ]
+          }
+        },
+        {
+          "id": "function:backend\\controllers\\bookController.js:updateBook:45",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\controllers\\bookController.js",
+          "relative_path": "backend/controllers/bookController.js",
+          "unit_type": "function",
+          "name": "updateBook",
+          "start_line": 45,
+          "end_line": 61,
+          "source": "async function updateBook(req, res) {\n  if (Object.keys(req.body).length === 0) {\n    return res.status(400).json({ message: 'No update fields provided' });\n  }\n  try {\n    const book = await Book.findByIdAndUpdate(req.params.id, req.body, {\n      new: true,\n      runValidators: true,\n    });\n    if (!book) {\n      return res.status(404).json({ message: 'Book not found' });\n    }\n    res.status(200).json(book);\n  } catch (err) {\n    res.status(500).json({ message: 'Failed to update book', error: err.message });\n  }\n}",
+          "calls": [
+            "updateBook",
+            "Object.keys",
+            "res.status",
+            "json",
+            "Book.findByIdAndUpdate",
+            "res.status",
+            "json",
+            "res.status",
+            "json",
+            "res.status",
+            "json"
+          ],
+          "dependencies": [
+            "Book"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../utils/validateBook",
+                "binding": "validateBook",
+                "dependency_type": "local_module",
+                "methods": [
+                  "validateBook"
+                ],
+                "resolved_path": "backend/utils/validateBook.js"
+              },
+              {
+                "import_path": "../models/Book",
+                "binding": "Book",
+                "dependency_type": "mongoose_model",
+                "methods": [
+                  "create",
+                  "find",
+                  "findById",
+                  "findByIdAndDelete",
+                  "findByIdAndUpdate"
+                ],
+                "resolved_path": "backend/models/Book.js"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+            ]
+          }
+        },
+        {
+          "id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\controllers\\bookController.js",
+          "relative_path": "backend/controllers/bookController.js",
+          "unit_type": "function",
+          "name": "deleteBook",
+          "start_line": 63,
+          "end_line": 73,
+          "source": "async function deleteBook(req, res) {\n  try {\n    const book = await Book.findByIdAndDelete(req.params.id);\n    if (!book) {\n      return res.status(404).json({ message: 'Book not found' });\n    }\n    res.status(200).json({ message: 'Book deleted', id: req.params.id });\n  } catch (err) {\n    res.status(500).json({ message: 'Failed to delete book', error: err.message });\n  }\n}",
+          "calls": [
+            "deleteBook",
+            "Book.findByIdAndDelete",
+            "res.status",
+            "json",
+            "res.status",
+            "json",
+            "res.status",
+            "json"
+          ],
+          "dependencies": [
+            "Book"
+          ],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../utils/validateBook",
+                "binding": "validateBook",
+                "dependency_type": "local_module",
+                "methods": [
+                  "validateBook"
+                ],
+                "resolved_path": "backend/utils/validateBook.js"
+              },
+              {
+                "import_path": "../models/Book",
+                "binding": "Book",
+                "dependency_type": "mongoose_model",
+                "methods": [
+                  "create",
+                  "find",
+                  "findById",
+                  "findByIdAndDelete",
+                  "findByIdAndUpdate"
+                ],
+                "resolved_path": "backend/models/Book.js"
+              }
+            ],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": [
+              "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+            ]
+          }
+        }
+      ],
+      "source_hash": "ea681227041252854e8e1065db824740ad8ea104"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\models\\Book.js",
+      "relative_path": "backend/models/Book.js",
+      "language": "js",
+      "stack_area": "backend",
+      "file_role": "model",
+      "imports": [
+        {
+          "source": "mongoose",
+          "bindings": [
+            "mongoose"
+          ],
+          "line": 1,
+          "import_kind": "require",
+          "resolved_path": null,
+          "is_external": true
+        }
+      ],
+      "exports": [
+        {
+          "name": "default",
+          "line": 33,
+          "export_kind": "commonjs"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "mongoose",
+          "import_path": "mongoose",
+          "dependency_type": "unknown",
+          "methods": [
+            "Schema",
+            "model"
+          ],
+          "resolved_path": null,
+          "side_effect_level": "database",
+          "mock_strategy": "manual"
+        }
+      ],
+      "units": [
+        {
+          "id": "model:backend\\models\\Book.js:Book:3",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\models\\Book.js",
+          "relative_path": "backend/models/Book.js",
+          "unit_type": "model",
+          "name": "Book",
+          "start_line": 3,
+          "end_line": 29,
+          "source": "const bookSchema = new mongoose.Schema(\n  {\n    title: {\n      type: String,\n      required: true,\n      trim: true,\n    },\n    author: {\n      type: String,\n      required: true,\n      trim: true,\n    },\n    genre: {\n      type: String,\n      default: 'Uncategorized',\n    },\n    rating: {\n      type: Number,\n      min: 0,\n      max: 5,\n      default: 0,\n    },\n    isRead: {\n      type: Boolean,\n      default: false,\n    },\n  },",
+          "calls": [
+            "mongoose.Schema"
+          ],
+          "dependencies": [
+            "mongoose"
+          ],
+          "template_kind": "model",
+          "risk_level": "high",
+          "mock_plan": {
+            "target_unit_id": "model:backend\\models\\Book.js:Book:3",
+            "framework": "jest",
+            "module_mocks": [],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "b096aa57216cfe66826fcff24de9272643fc082f"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\routes\\bookRoutes.js",
+      "relative_path": "backend/routes/bookRoutes.js",
+      "language": "js",
+      "stack_area": "backend",
+      "file_role": "route",
+      "imports": [
+        {
+          "source": "../controllers/bookController",
+          "bindings": [
+            "getBooks",
+            "getBookById",
+            "addBook",
+            "updateBook",
+            "deleteBook"
+          ],
+          "line": 2,
+          "import_kind": "require",
+          "resolved_path": "backend/controllers/bookController.js",
+          "is_external": false
+        },
+        {
+          "source": "express",
+          "bindings": [
+            "express"
+          ],
+          "line": 1,
+          "import_kind": "require",
+          "resolved_path": null,
+          "is_external": true
+        },
+        {
+          "source": "../controllers/bookController",
+          "bindings": [],
+          "line": 8,
+          "import_kind": "side_effect",
+          "resolved_path": "backend/controllers/bookController.js",
+          "is_external": false
+        }
+      ],
+      "exports": [
+        {
+          "name": "default",
+          "line": 18,
+          "export_kind": "commonjs"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "getBooks",
+          "import_path": "../controllers/bookController",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/controllers/bookController.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "getBookById",
+          "import_path": "../controllers/bookController",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/controllers/bookController.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "addBook",
+          "import_path": "../controllers/bookController",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/controllers/bookController.js",
+          "side_effect_level": "database",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "updateBook",
+          "import_path": "../controllers/bookController",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/controllers/bookController.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "deleteBook",
+          "import_path": "../controllers/bookController",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/controllers/bookController.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        },
+        {
+          "name": "express",
+          "import_path": "express",
+          "dependency_type": "framework",
+          "methods": [
+            "Router"
+          ],
+          "resolved_path": null,
+          "side_effect_level": "local",
+          "mock_strategy": "manual"
+        },
+        {
+          "name": "bookController",
+          "import_path": "../controllers/bookController",
+          "dependency_type": "local_module",
+          "methods": [],
+          "resolved_path": "backend/controllers/bookController.js",
+          "side_effect_level": "local",
+          "mock_strategy": "module_mock"
+        }
+      ],
+      "units": [
+        {
+          "id": "route:backend\\routes\\bookRoutes.js:GET /:12",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\routes\\bookRoutes.js",
+          "relative_path": "backend/routes/bookRoutes.js",
+          "unit_type": "route",
+          "name": "GET /",
+          "start_line": 12,
+          "end_line": 13,
+          "source": "router.get('/', getBooks);\nrouter.get('/:id', getBookById);",
+          "calls": [
+            "router.get",
+            "router.get"
+          ],
+          "dependencies": [
+            "getBooks",
+            "getBookById"
+          ],
+          "template_kind": "route",
+          "risk_level": "high",
+          "mock_plan": {
+            "target_unit_id": "route:backend\\routes\\bookRoutes.js:GET /:12",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../controllers/bookController",
+                "binding": "getBooks",
+                "dependency_type": "local_module",
+                "methods": [
+                  "getBooks",
+                  "getBookById",
+                  "addBook",
+                  "updateBook",
+                  "deleteBook",
+                  "bookController"
+                ],
+                "resolved_path": "backend/controllers/bookController.js"
+              }
+            ],
+            "inline_stubs": [
+              "req",
+              "res"
+            ],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        },
+        {
+          "id": "route:backend\\routes\\bookRoutes.js:GET /:id:13",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\routes\\bookRoutes.js",
+          "relative_path": "backend/routes/bookRoutes.js",
+          "unit_type": "route",
+          "name": "GET /:id",
+          "start_line": 13,
+          "end_line": 14,
+          "source": "router.get('/:id', getBookById);\nrouter.post('/', addBook);",
+          "calls": [
+            "router.get",
+            "router.post"
+          ],
+          "dependencies": [
+            "getBookById",
+            "addBook"
+          ],
+          "template_kind": "route",
+          "risk_level": "high",
+          "mock_plan": {
+            "target_unit_id": "route:backend\\routes\\bookRoutes.js:GET /:id:13",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../controllers/bookController",
+                "binding": "getBooks",
+                "dependency_type": "local_module",
+                "methods": [
+                  "getBooks",
+                  "getBookById",
+                  "addBook",
+                  "updateBook",
+                  "deleteBook",
+                  "bookController"
+                ],
+                "resolved_path": "backend/controllers/bookController.js"
+              }
+            ],
+            "inline_stubs": [
+              "req",
+              "res"
+            ],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        },
+        {
+          "id": "route:backend\\routes\\bookRoutes.js:POST /:14",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\routes\\bookRoutes.js",
+          "relative_path": "backend/routes/bookRoutes.js",
+          "unit_type": "route",
+          "name": "POST /",
+          "start_line": 14,
+          "end_line": 15,
+          "source": "router.post('/', addBook);\nrouter.put('/:id', updateBook);",
+          "calls": [
+            "router.post",
+            "router.put"
+          ],
+          "dependencies": [
+            "addBook",
+            "updateBook"
+          ],
+          "template_kind": "route",
+          "risk_level": "high",
+          "mock_plan": {
+            "target_unit_id": "route:backend\\routes\\bookRoutes.js:POST /:14",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../controllers/bookController",
+                "binding": "getBooks",
+                "dependency_type": "local_module",
+                "methods": [
+                  "getBooks",
+                  "getBookById",
+                  "addBook",
+                  "updateBook",
+                  "deleteBook",
+                  "bookController"
+                ],
+                "resolved_path": "backend/controllers/bookController.js"
+              }
+            ],
+            "inline_stubs": [
+              "req",
+              "res"
+            ],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        },
+        {
+          "id": "route:backend\\routes\\bookRoutes.js:PUT /:id:15",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\routes\\bookRoutes.js",
+          "relative_path": "backend/routes/bookRoutes.js",
+          "unit_type": "route",
+          "name": "PUT /:id",
+          "start_line": 15,
+          "end_line": 16,
+          "source": "router.put('/:id', updateBook);\nrouter.delete('/:id', deleteBook);",
+          "calls": [
+            "router.put",
+            "router.delete"
+          ],
+          "dependencies": [
+            "updateBook",
+            "deleteBook"
+          ],
+          "template_kind": "route",
+          "risk_level": "high",
+          "mock_plan": {
+            "target_unit_id": "route:backend\\routes\\bookRoutes.js:PUT /:id:15",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../controllers/bookController",
+                "binding": "getBooks",
+                "dependency_type": "local_module",
+                "methods": [
+                  "getBooks",
+                  "getBookById",
+                  "addBook",
+                  "updateBook",
+                  "deleteBook",
+                  "bookController"
+                ],
+                "resolved_path": "backend/controllers/bookController.js"
+              }
+            ],
+            "inline_stubs": [
+              "req",
+              "res"
+            ],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        },
+        {
+          "id": "route:backend\\routes\\bookRoutes.js:DELETE /:id:16",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\routes\\bookRoutes.js",
+          "relative_path": "backend/routes/bookRoutes.js",
+          "unit_type": "route",
+          "name": "DELETE /:id",
+          "start_line": 16,
+          "end_line": 18,
+          "source": "router.delete('/:id', deleteBook);\n\nmodule.exports = router;",
+          "calls": [
+            "router.delete"
+          ],
+          "dependencies": [
+            "deleteBook"
+          ],
+          "template_kind": "route",
+          "risk_level": "high",
+          "mock_plan": {
+            "target_unit_id": "route:backend\\routes\\bookRoutes.js:DELETE /:id:16",
+            "framework": "jest",
+            "module_mocks": [
+              {
+                "import_path": "../controllers/bookController",
+                "binding": "getBooks",
+                "dependency_type": "local_module",
+                "methods": [
+                  "getBooks",
+                  "getBookById",
+                  "addBook",
+                  "updateBook",
+                  "deleteBook",
+                  "bookController"
+                ],
+                "resolved_path": "backend/controllers/bookController.js"
+              }
+            ],
+            "inline_stubs": [
+              "req",
+              "res"
+            ],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "d7f5c80ef205f7e53ca8c7810e90152c1e0611d1"
+    },
+    {
+      "path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\utils\\validateBook.js",
+      "relative_path": "backend/utils/validateBook.js",
+      "language": "js",
+      "stack_area": "backend",
+      "file_role": "utility",
+      "imports": [],
+      "exports": [
+        {
+          "name": "validateBook",
+          "line": 30,
+          "export_kind": "commonjs_named"
+        }
+      ],
+      "dependencies": [],
+      "units": [
+        {
+          "id": "function:backend\\utils\\validateBook.js:validateBook:1",
+          "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\utils\\validateBook.js",
+          "relative_path": "backend/utils/validateBook.js",
+          "unit_type": "function",
+          "name": "validateBook",
+          "start_line": 1,
+          "end_line": 28,
+          "source": "function validateBook(payload) {\n  const errors = [];\n\n  if (!payload || typeof payload !== 'object') {\n    return { valid: false, errors: ['Payload must be an object'] };\n  }\n\n  if (!payload.title || typeof payload.title !== 'string' || !payload.title.trim()) {\n    errors.push('Title is required');\n  }\n\n  if (!payload.author || typeof payload.author !== 'string' || !payload.author.trim()) {\n    errors.push('Author is required');\n  }\n\n  if (payload.rating !== undefined) {\n    const rating = Number(payload.rating);\n    if (Number.isNaN(rating) || rating < 0 || rating > 5) {\n      errors.push('Rating must be a number between 0 and 5');\n    }\n  }\n\n  if (payload.genre !== undefined && typeof payload.genre !== 'string') {\n    errors.push('Genre must be a string');\n  }\n\n  return { valid: errors.length === 0, errors };\n}",
+          "calls": [
+            "validateBook",
+            "title.trim",
+            "errors.push",
+            "author.trim",
+            "errors.push",
+            "Number",
+            "Number.isNaN",
+            "errors.push",
+            "errors.push"
+          ],
+          "dependencies": [],
+          "template_kind": "function",
+          "risk_level": "medium",
+          "mock_plan": {
+            "target_unit_id": "function:backend\\utils\\validateBook.js:validateBook:1",
+            "framework": "jest",
+            "module_mocks": [],
+            "inline_stubs": [],
+            "reset_strategy": "clear_all_mocks",
+            "notes": []
+          }
+        }
+      ],
+      "source_hash": "a642ce4b3f7bb2f1ce959842cf4e26d362826b38"
+    }
+  ],
+  "units": [
+    {
+      "id": "route:backend\\server.js:GET /api/health:14",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\server.js",
+      "relative_path": "backend/server.js",
+      "unit_type": "route",
+      "name": "GET /api/health",
+      "start_line": 14,
+      "end_line": 16,
+      "source": "app.get('/api/health', (req, res) => {\n  res.status(200).json({ status: 'ok' });\n});",
+      "calls": [
+        "app.get",
+        "res.status",
+        "json"
+      ],
+      "dependencies": [],
+      "template_kind": "route",
+      "risk_level": "high",
+      "mock_plan": {
+        "target_unit_id": "route:backend\\server.js:GET /api/health:14",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "./routes/bookRoutes",
+            "binding": "bookRoutes",
+            "dependency_type": "local_module",
+            "methods": [
+              "bookRoutes"
+            ],
+            "resolved_path": "backend/routes/bookRoutes.js"
+          }
+        ],
+        "inline_stubs": [
+          "process.env",
+          "req",
+          "res"
+        ],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "function:frontend\\src\\api.js:getBooks:5",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\api.js",
+      "relative_path": "frontend/src/api.js",
+      "unit_type": "function",
+      "name": "getBooks",
+      "start_line": 5,
+      "end_line": 8,
+      "source": "export async function getBooks(filters = {}) {\n  const response = await axios.get(API_URL, { params: filters });\n  return response.data;\n}",
+      "calls": [
+        "getBooks",
+        "axios.get"
+      ],
+      "dependencies": [
+        "axios"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:frontend\\src\\api.js:getBooks:5",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "axios",
+            "binding": "axios",
+            "dependency_type": "axios_client",
+            "methods": [
+              "delete",
+              "get",
+              "post",
+              "put"
+            ],
+            "resolved_path": null
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Mock axios in every API-helper test to avoid live network calls."
+        ]
+      }
+    },
+    {
+      "id": "function:frontend\\src\\api.js:getBookById:10",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\api.js",
+      "relative_path": "frontend/src/api.js",
+      "unit_type": "function",
+      "name": "getBookById",
+      "start_line": 10,
+      "end_line": 13,
+      "source": "export async function getBookById(id) {\n  const response = await axios.get(`${API_URL}/${id}`);\n  return response.data;\n}",
+      "calls": [
+        "getBookById",
+        "axios.get"
+      ],
+      "dependencies": [
+        "axios"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:frontend\\src\\api.js:getBookById:10",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "axios",
+            "binding": "axios",
+            "dependency_type": "axios_client",
+            "methods": [
+              "delete",
+              "get",
+              "post",
+              "put"
+            ],
+            "resolved_path": null
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Mock axios in every API-helper test to avoid live network calls."
+        ]
+      }
+    },
+    {
+      "id": "function:frontend\\src\\api.js:addBook:15",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\api.js",
+      "relative_path": "frontend/src/api.js",
+      "unit_type": "function",
+      "name": "addBook",
+      "start_line": 15,
+      "end_line": 18,
+      "source": "export async function addBook(book) {\n  const response = await axios.post(API_URL, book);\n  return response.data;\n}",
+      "calls": [
+        "addBook",
+        "axios.post"
+      ],
+      "dependencies": [
+        "axios"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:frontend\\src\\api.js:addBook:15",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "axios",
+            "binding": "axios",
+            "dependency_type": "axios_client",
+            "methods": [
+              "delete",
+              "get",
+              "post",
+              "put"
+            ],
+            "resolved_path": null
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Mock axios in every API-helper test to avoid live network calls."
+        ]
+      }
+    },
+    {
+      "id": "function:frontend\\src\\api.js:updateBook:20",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\api.js",
+      "relative_path": "frontend/src/api.js",
+      "unit_type": "function",
+      "name": "updateBook",
+      "start_line": 20,
+      "end_line": 23,
+      "source": "export async function updateBook(id, updates) {\n  const response = await axios.put(`${API_URL}/${id}`, updates);\n  return response.data;\n}",
+      "calls": [
+        "updateBook",
+        "axios.put"
+      ],
+      "dependencies": [
+        "axios"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:frontend\\src\\api.js:updateBook:20",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "axios",
+            "binding": "axios",
+            "dependency_type": "axios_client",
+            "methods": [
+              "delete",
+              "get",
+              "post",
+              "put"
+            ],
+            "resolved_path": null
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Mock axios in every API-helper test to avoid live network calls."
+        ]
+      }
+    },
+    {
+      "id": "function:frontend\\src\\api.js:deleteBook:25",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\api.js",
+      "relative_path": "frontend/src/api.js",
+      "unit_type": "function",
+      "name": "deleteBook",
+      "start_line": 25,
+      "end_line": 28,
+      "source": "export async function deleteBook(id) {\n  const response = await axios.delete(`${API_URL}/${id}`);\n  return response.data;\n}",
+      "calls": [
+        "deleteBook",
+        "axios.delete"
+      ],
+      "dependencies": [
+        "axios"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:frontend\\src\\api.js:deleteBook:25",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "axios",
+            "binding": "axios",
+            "dependency_type": "axios_client",
+            "methods": [
+              "delete",
+              "get",
+              "post",
+              "put"
+            ],
+            "resolved_path": null
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Mock axios in every API-helper test to avoid live network calls."
+        ]
+      }
+    },
+    {
+      "id": "component:frontend\\src\\App.jsx:App:4",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\App.jsx",
+      "relative_path": "frontend/src/App.jsx",
+      "unit_type": "component",
+      "name": "App",
+      "start_line": 4,
+      "end_line": 11,
+      "source": "export default function App() {\n  return (\n    <div>\n      <h1>My Bookshelf</h1>\n      <BookList />\n    </div>\n  );\n}",
+      "calls": [
+        "App",
+        "return"
+      ],
+      "dependencies": [
+        "BookList"
+      ],
+      "template_kind": "component",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "component:frontend\\src\\App.jsx:App:4",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "./components/BookList",
+            "binding": "BookList",
+            "dependency_type": "local_module",
+            "methods": [
+              "BookList"
+            ],
+            "resolved_path": "frontend/src/components/BookList.jsx"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "function:frontend\\src\\utils.js:formatRating:1",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\utils.js",
+      "relative_path": "frontend/src/utils.js",
+      "unit_type": "function",
+      "name": "formatRating",
+      "start_line": 1,
+      "end_line": 8,
+      "source": "export function formatRating(rating) {\n  const num = Number(rating);\n  if (Number.isNaN(num) || num < 0) {\n    return 'Unrated';\n  }\n  const clamped = Math.min(num, 5);\n  return `${'\u2605'.repeat(Math.round(clamped))}${'\u2606'.repeat(5 - Math.round(clamped))}`;\n}",
+      "calls": [
+        "formatRating",
+        "Number",
+        "Number.isNaN",
+        "Math.min",
+        "repeat",
+        "Math.round"
+      ],
+      "dependencies": [],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:frontend\\src\\utils.js:formatRating:1",
+        "framework": "jest",
+        "module_mocks": [],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "function:frontend\\src\\utils.js:sortBooksByTitle:10",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\utils.js",
+      "relative_path": "frontend/src/utils.js",
+      "unit_type": "function",
+      "name": "sortBooksByTitle",
+      "start_line": 10,
+      "end_line": 13,
+      "source": "export function sortBooksByTitle(books) {\n  if (!Array.isArray(books)) return [];\n  return [...books].sort((a, b) => a.title.localeCompare(b.title));\n}",
+      "calls": [
+        "sortBooksByTitle",
+        "Array.isArray",
+        "sort",
+        "title.localeCompare"
+      ],
+      "dependencies": [],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:frontend\\src\\utils.js:sortBooksByTitle:10",
+        "framework": "jest",
+        "module_mocks": [],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "function:frontend\\src\\utils.js:filterUnreadBooks:15",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\utils.js",
+      "relative_path": "frontend/src/utils.js",
+      "unit_type": "function",
+      "name": "filterUnreadBooks",
+      "start_line": 15,
+      "end_line": 18,
+      "source": "export function filterUnreadBooks(books) {\n  if (!Array.isArray(books)) return [];\n  return books.filter((book) => !book.isRead);\n}",
+      "calls": [
+        "filterUnreadBooks",
+        "Array.isArray",
+        "books.filter"
+      ],
+      "dependencies": [],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:frontend\\src\\utils.js:filterUnreadBooks:15",
+        "framework": "jest",
+        "module_mocks": [],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\frontend\\src\\components\\BookList.jsx",
+      "relative_path": "frontend/src/components/BookList.jsx",
+      "unit_type": "component",
+      "name": "BookList",
+      "start_line": 5,
+      "end_line": 36,
+      "source": "export default function BookList() {\n  const [books, setBooks] = useState([]);\n  const [loading, setLoading] = useState(true);\n  const [error, setError] = useState(null);\n\n  useEffect(() => {\n    getBooks()\n      .then((data) => setBooks(data))\n      .catch((err) => setError(err.message))\n      .finally(() => setLoading(false));\n  }, []);\n\n  async function handleDelete(id) {\n    await deleteBook(id);\n    setBooks((prev) => prev.filter((book) => book._id !== id));\n  }\n\n  if (loading) return <p>Loading books...</p>;\n  if (error) return <p role=\"alert\">Error: {error}</p>;\n\n  return (\n    <ul aria-label=\"book-list\">\n      {books.map((book) => (\n        <li key={book._id}>\n          <span>{book.title}</span> by <span>{book.author}</span>{' '}\n          <span>{formatRating(book.rating)}</span>\n          <button onClick={() => handleDelete(book._id)}>Remove</button>\n        </li>\n      ))}\n    </ul>\n  );\n}",
+      "calls": [
+        "BookList",
+        "useState",
+        "useState",
+        "useState",
+        "useEffect",
+        "getBooks",
+        "then",
+        "setBooks",
+        "setError",
+        "finally",
+        "setLoading",
+        "handleDelete",
+        "deleteBook",
+        "setBooks",
+        "prev.filter",
+        "return",
+        "books.map",
+        "formatRating",
+        "handleDelete"
+      ],
+      "dependencies": [
+        "useEffect",
+        "useState",
+        "getBooks",
+        "deleteBook",
+        "formatRating"
+      ],
+      "template_kind": "component",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../api",
+            "binding": "getBooks",
+            "dependency_type": "local_module",
+            "methods": [
+              "getBooks",
+              "deleteBook"
+            ],
+            "resolved_path": "frontend/src/api.js"
+          },
+          {
+            "import_path": "../utils",
+            "binding": "formatRating",
+            "dependency_type": "local_module",
+            "methods": [
+              "formatRating"
+            ],
+            "resolved_path": "frontend/src/utils.js"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "function:backend\\controllers\\bookController.js:getBooks:4",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\controllers\\bookController.js",
+      "relative_path": "backend/controllers/bookController.js",
+      "unit_type": "function",
+      "name": "getBooks",
+      "start_line": 4,
+      "end_line": 18,
+      "source": "async function getBooks(req, res) {\n  try {\n    const filter = {};\n    if (req.query.genre) {\n      filter.genre = req.query.genre;\n    }\n    if (req.query.isRead !== undefined) {\n      filter.isRead = req.query.isRead === 'true';\n    }\n    const books = await Book.find(filter).sort({ createdAt: -1 });\n    res.status(200).json(books);\n  } catch (err) {\n    res.status(500).json({ message: 'Failed to fetch books', error: err.message });\n  }\n}",
+      "calls": [
+        "getBooks",
+        "Book.find",
+        "sort",
+        "res.status",
+        "json",
+        "res.status",
+        "json"
+      ],
+      "dependencies": [
+        "Book"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:backend\\controllers\\bookController.js:getBooks:4",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../utils/validateBook",
+            "binding": "validateBook",
+            "dependency_type": "local_module",
+            "methods": [
+              "validateBook"
+            ],
+            "resolved_path": "backend/utils/validateBook.js"
+          },
+          {
+            "import_path": "../models/Book",
+            "binding": "Book",
+            "dependency_type": "mongoose_model",
+            "methods": [
+              "create",
+              "find",
+              "findById",
+              "findByIdAndDelete",
+              "findByIdAndUpdate"
+            ],
+            "resolved_path": "backend/models/Book.js"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+        ]
+      }
+    },
+    {
+      "id": "function:backend\\controllers\\bookController.js:getBookById:20",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\controllers\\bookController.js",
+      "relative_path": "backend/controllers/bookController.js",
+      "unit_type": "function",
+      "name": "getBookById",
+      "start_line": 20,
+      "end_line": 30,
+      "source": "async function getBookById(req, res) {\n  try {\n    const book = await Book.findById(req.params.id);\n    if (!book) {\n      return res.status(404).json({ message: 'Book not found' });\n    }\n    res.status(200).json(book);\n  } catch (err) {\n    res.status(500).json({ message: 'Failed to fetch book', error: err.message });\n  }\n}",
+      "calls": [
+        "getBookById",
+        "Book.findById",
+        "res.status",
+        "json",
+        "res.status",
+        "json",
+        "res.status",
+        "json"
+      ],
+      "dependencies": [
+        "Book"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:backend\\controllers\\bookController.js:getBookById:20",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../utils/validateBook",
+            "binding": "validateBook",
+            "dependency_type": "local_module",
+            "methods": [
+              "validateBook"
+            ],
+            "resolved_path": "backend/utils/validateBook.js"
+          },
+          {
+            "import_path": "../models/Book",
+            "binding": "Book",
+            "dependency_type": "mongoose_model",
+            "methods": [
+              "create",
+              "find",
+              "findById",
+              "findByIdAndDelete",
+              "findByIdAndUpdate"
+            ],
+            "resolved_path": "backend/models/Book.js"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+        ]
+      }
+    },
+    {
+      "id": "function:backend\\controllers\\bookController.js:addBook:32",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\controllers\\bookController.js",
+      "relative_path": "backend/controllers/bookController.js",
+      "unit_type": "function",
+      "name": "addBook",
+      "start_line": 32,
+      "end_line": 43,
+      "source": "async function addBook(req, res) {\n  const { valid, errors } = validateBook(req.body);\n  if (!valid) {\n    return res.status(400).json({ message: 'Validation failed', errors });\n  }\n  try {\n    const book = await Book.create(req.body);\n    res.status(201).json(book);\n  } catch (err) {\n    res.status(500).json({ message: 'Failed to create book', error: err.message });\n  }\n}",
+      "calls": [
+        "addBook",
+        "validateBook",
+        "res.status",
+        "json",
+        "Book.create",
+        "res.status",
+        "json",
+        "res.status",
+        "json"
+      ],
+      "dependencies": [
+        "validateBook",
+        "Book"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:backend\\controllers\\bookController.js:addBook:32",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../utils/validateBook",
+            "binding": "validateBook",
+            "dependency_type": "local_module",
+            "methods": [
+              "validateBook"
+            ],
+            "resolved_path": "backend/utils/validateBook.js"
+          },
+          {
+            "import_path": "../models/Book",
+            "binding": "Book",
+            "dependency_type": "mongoose_model",
+            "methods": [
+              "create",
+              "find",
+              "findById",
+              "findByIdAndDelete",
+              "findByIdAndUpdate"
+            ],
+            "resolved_path": "backend/models/Book.js"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+        ]
+      }
+    },
+    {
+      "id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\controllers\\bookController.js",
+      "relative_path": "backend/controllers/bookController.js",
+      "unit_type": "function",
+      "name": "updateBook",
+      "start_line": 45,
+      "end_line": 61,
+      "source": "async function updateBook(req, res) {\n  if (Object.keys(req.body).length === 0) {\n    return res.status(400).json({ message: 'No update fields provided' });\n  }\n  try {\n    const book = await Book.findByIdAndUpdate(req.params.id, req.body, {\n      new: true,\n      runValidators: true,\n    });\n    if (!book) {\n      return res.status(404).json({ message: 'Book not found' });\n    }\n    res.status(200).json(book);\n  } catch (err) {\n    res.status(500).json({ message: 'Failed to update book', error: err.message });\n  }\n}",
+      "calls": [
+        "updateBook",
+        "Object.keys",
+        "res.status",
+        "json",
+        "Book.findByIdAndUpdate",
+        "res.status",
+        "json",
+        "res.status",
+        "json",
+        "res.status",
+        "json"
+      ],
+      "dependencies": [
+        "Book"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../utils/validateBook",
+            "binding": "validateBook",
+            "dependency_type": "local_module",
+            "methods": [
+              "validateBook"
+            ],
+            "resolved_path": "backend/utils/validateBook.js"
+          },
+          {
+            "import_path": "../models/Book",
+            "binding": "Book",
+            "dependency_type": "mongoose_model",
+            "methods": [
+              "create",
+              "find",
+              "findById",
+              "findByIdAndDelete",
+              "findByIdAndUpdate"
+            ],
+            "resolved_path": "backend/models/Book.js"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+        ]
+      }
+    },
+    {
+      "id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\controllers\\bookController.js",
+      "relative_path": "backend/controllers/bookController.js",
+      "unit_type": "function",
+      "name": "deleteBook",
+      "start_line": 63,
+      "end_line": 73,
+      "source": "async function deleteBook(req, res) {\n  try {\n    const book = await Book.findByIdAndDelete(req.params.id);\n    if (!book) {\n      return res.status(404).json({ message: 'Book not found' });\n    }\n    res.status(200).json({ message: 'Book deleted', id: req.params.id });\n  } catch (err) {\n    res.status(500).json({ message: 'Failed to delete book', error: err.message });\n  }\n}",
+      "calls": [
+        "deleteBook",
+        "Book.findByIdAndDelete",
+        "res.status",
+        "json",
+        "res.status",
+        "json",
+        "res.status",
+        "json"
+      ],
+      "dependencies": [
+        "Book"
+      ],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../utils/validateBook",
+            "binding": "validateBook",
+            "dependency_type": "local_module",
+            "methods": [
+              "validateBook"
+            ],
+            "resolved_path": "backend/utils/validateBook.js"
+          },
+          {
+            "import_path": "../models/Book",
+            "binding": "Book",
+            "dependency_type": "mongoose_model",
+            "methods": [
+              "create",
+              "find",
+              "findById",
+              "findByIdAndDelete",
+              "findByIdAndUpdate"
+            ],
+            "resolved_path": "backend/models/Book.js"
+          }
+        ],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": [
+          "Declare Mongoose model mocks before requiring controllers, routes, or apps."
+        ]
+      }
+    },
+    {
+      "id": "model:backend\\models\\Book.js:Book:3",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\models\\Book.js",
+      "relative_path": "backend/models/Book.js",
+      "unit_type": "model",
+      "name": "Book",
+      "start_line": 3,
+      "end_line": 29,
+      "source": "const bookSchema = new mongoose.Schema(\n  {\n    title: {\n      type: String,\n      required: true,\n      trim: true,\n    },\n    author: {\n      type: String,\n      required: true,\n      trim: true,\n    },\n    genre: {\n      type: String,\n      default: 'Uncategorized',\n    },\n    rating: {\n      type: Number,\n      min: 0,\n      max: 5,\n      default: 0,\n    },\n    isRead: {\n      type: Boolean,\n      default: false,\n    },\n  },",
+      "calls": [
+        "mongoose.Schema"
+      ],
+      "dependencies": [
+        "mongoose"
+      ],
+      "template_kind": "model",
+      "risk_level": "high",
+      "mock_plan": {
+        "target_unit_id": "model:backend\\models\\Book.js:Book:3",
+        "framework": "jest",
+        "module_mocks": [],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "route:backend\\routes\\bookRoutes.js:GET /:12",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\routes\\bookRoutes.js",
+      "relative_path": "backend/routes/bookRoutes.js",
+      "unit_type": "route",
+      "name": "GET /",
+      "start_line": 12,
+      "end_line": 13,
+      "source": "router.get('/', getBooks);\nrouter.get('/:id', getBookById);",
+      "calls": [
+        "router.get",
+        "router.get"
+      ],
+      "dependencies": [
+        "getBooks",
+        "getBookById"
+      ],
+      "template_kind": "route",
+      "risk_level": "high",
+      "mock_plan": {
+        "target_unit_id": "route:backend\\routes\\bookRoutes.js:GET /:12",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../controllers/bookController",
+            "binding": "getBooks",
+            "dependency_type": "local_module",
+            "methods": [
+              "getBooks",
+              "getBookById",
+              "addBook",
+              "updateBook",
+              "deleteBook",
+              "bookController"
+            ],
+            "resolved_path": "backend/controllers/bookController.js"
+          }
+        ],
+        "inline_stubs": [
+          "req",
+          "res"
+        ],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "route:backend\\routes\\bookRoutes.js:GET /:id:13",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\routes\\bookRoutes.js",
+      "relative_path": "backend/routes/bookRoutes.js",
+      "unit_type": "route",
+      "name": "GET /:id",
+      "start_line": 13,
+      "end_line": 14,
+      "source": "router.get('/:id', getBookById);\nrouter.post('/', addBook);",
+      "calls": [
+        "router.get",
+        "router.post"
+      ],
+      "dependencies": [
+        "getBookById",
+        "addBook"
+      ],
+      "template_kind": "route",
+      "risk_level": "high",
+      "mock_plan": {
+        "target_unit_id": "route:backend\\routes\\bookRoutes.js:GET /:id:13",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../controllers/bookController",
+            "binding": "getBooks",
+            "dependency_type": "local_module",
+            "methods": [
+              "getBooks",
+              "getBookById",
+              "addBook",
+              "updateBook",
+              "deleteBook",
+              "bookController"
+            ],
+            "resolved_path": "backend/controllers/bookController.js"
+          }
+        ],
+        "inline_stubs": [
+          "req",
+          "res"
+        ],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "route:backend\\routes\\bookRoutes.js:POST /:14",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\routes\\bookRoutes.js",
+      "relative_path": "backend/routes/bookRoutes.js",
+      "unit_type": "route",
+      "name": "POST /",
+      "start_line": 14,
+      "end_line": 15,
+      "source": "router.post('/', addBook);\nrouter.put('/:id', updateBook);",
+      "calls": [
+        "router.post",
+        "router.put"
+      ],
+      "dependencies": [
+        "addBook",
+        "updateBook"
+      ],
+      "template_kind": "route",
+      "risk_level": "high",
+      "mock_plan": {
+        "target_unit_id": "route:backend\\routes\\bookRoutes.js:POST /:14",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../controllers/bookController",
+            "binding": "getBooks",
+            "dependency_type": "local_module",
+            "methods": [
+              "getBooks",
+              "getBookById",
+              "addBook",
+              "updateBook",
+              "deleteBook",
+              "bookController"
+            ],
+            "resolved_path": "backend/controllers/bookController.js"
+          }
+        ],
+        "inline_stubs": [
+          "req",
+          "res"
+        ],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "route:backend\\routes\\bookRoutes.js:PUT /:id:15",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\routes\\bookRoutes.js",
+      "relative_path": "backend/routes/bookRoutes.js",
+      "unit_type": "route",
+      "name": "PUT /:id",
+      "start_line": 15,
+      "end_line": 16,
+      "source": "router.put('/:id', updateBook);\nrouter.delete('/:id', deleteBook);",
+      "calls": [
+        "router.put",
+        "router.delete"
+      ],
+      "dependencies": [
+        "updateBook",
+        "deleteBook"
+      ],
+      "template_kind": "route",
+      "risk_level": "high",
+      "mock_plan": {
+        "target_unit_id": "route:backend\\routes\\bookRoutes.js:PUT /:id:15",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../controllers/bookController",
+            "binding": "getBooks",
+            "dependency_type": "local_module",
+            "methods": [
+              "getBooks",
+              "getBookById",
+              "addBook",
+              "updateBook",
+              "deleteBook",
+              "bookController"
+            ],
+            "resolved_path": "backend/controllers/bookController.js"
+          }
+        ],
+        "inline_stubs": [
+          "req",
+          "res"
+        ],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "route:backend\\routes\\bookRoutes.js:DELETE /:id:16",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\routes\\bookRoutes.js",
+      "relative_path": "backend/routes/bookRoutes.js",
+      "unit_type": "route",
+      "name": "DELETE /:id",
+      "start_line": 16,
+      "end_line": 18,
+      "source": "router.delete('/:id', deleteBook);\n\nmodule.exports = router;",
+      "calls": [
+        "router.delete"
+      ],
+      "dependencies": [
+        "deleteBook"
+      ],
+      "template_kind": "route",
+      "risk_level": "high",
+      "mock_plan": {
+        "target_unit_id": "route:backend\\routes\\bookRoutes.js:DELETE /:id:16",
+        "framework": "jest",
+        "module_mocks": [
+          {
+            "import_path": "../controllers/bookController",
+            "binding": "getBooks",
+            "dependency_type": "local_module",
+            "methods": [
+              "getBooks",
+              "getBookById",
+              "addBook",
+              "updateBook",
+              "deleteBook",
+              "bookController"
+            ],
+            "resolved_path": "backend/controllers/bookController.js"
+          }
+        ],
+        "inline_stubs": [
+          "req",
+          "res"
+        ],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    },
+    {
+      "id": "function:backend\\utils\\validateBook.js:validateBook:1",
+      "file_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\mern-bookshelf-app\\mern-bookshelf-app\\backend\\utils\\validateBook.js",
+      "relative_path": "backend/utils/validateBook.js",
+      "unit_type": "function",
+      "name": "validateBook",
+      "start_line": 1,
+      "end_line": 28,
+      "source": "function validateBook(payload) {\n  const errors = [];\n\n  if (!payload || typeof payload !== 'object') {\n    return { valid: false, errors: ['Payload must be an object'] };\n  }\n\n  if (!payload.title || typeof payload.title !== 'string' || !payload.title.trim()) {\n    errors.push('Title is required');\n  }\n\n  if (!payload.author || typeof payload.author !== 'string' || !payload.author.trim()) {\n    errors.push('Author is required');\n  }\n\n  if (payload.rating !== undefined) {\n    const rating = Number(payload.rating);\n    if (Number.isNaN(rating) || rating < 0 || rating > 5) {\n      errors.push('Rating must be a number between 0 and 5');\n    }\n  }\n\n  if (payload.genre !== undefined && typeof payload.genre !== 'string') {\n    errors.push('Genre must be a string');\n  }\n\n  return { valid: errors.length === 0, errors };\n}",
+      "calls": [
+        "validateBook",
+        "title.trim",
+        "errors.push",
+        "author.trim",
+        "errors.push",
+        "Number",
+        "Number.isNaN",
+        "errors.push",
+        "errors.push"
+      ],
+      "dependencies": [],
+      "template_kind": "function",
+      "risk_level": "medium",
+      "mock_plan": {
+        "target_unit_id": "function:backend\\utils\\validateBook.js:validateBook:1",
+        "framework": "jest",
+        "module_mocks": [],
+        "inline_stubs": [],
+        "reset_strategy": "clear_all_mocks",
+        "notes": []
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "express",
+      "import_path": "express",
+      "dependency_type": "framework",
+      "methods": [
+        "json"
+      ],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "cors",
+      "import_path": "cors",
+      "dependency_type": "unknown",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "mongoose",
+      "import_path": "mongoose",
+      "dependency_type": "unknown",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "database",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "dotenv",
+      "import_path": "dotenv",
+      "dependency_type": "unknown",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "bookRoutes",
+      "import_path": "./routes/bookRoutes",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/routes/bookRoutes.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "process.env",
+      "import_path": "global:process.env",
+      "dependency_type": "env",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "environment",
+      "mock_strategy": "inline_stub"
+    },
+    {
+      "name": "defineConfig",
+      "import_path": "vite",
+      "dependency_type": "unknown",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "react",
+      "import_path": "@vitejs/plugin-react",
+      "dependency_type": "unknown",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "axios",
+      "import_path": "axios",
+      "dependency_type": "axios_client",
+      "methods": [
+        "delete",
+        "get",
+        "post",
+        "put"
+      ],
+      "resolved_path": null,
+      "side_effect_level": "external",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "React",
+      "import_path": "react",
+      "dependency_type": "framework",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "BookList",
+      "import_path": "./components/BookList",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "frontend/src/components/BookList.jsx",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "ReactDOM",
+      "import_path": "react-dom/client",
+      "dependency_type": "unknown",
+      "methods": [
+        "createRoot"
+      ],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "App",
+      "import_path": "./App",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "frontend/src/App.jsx",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "useEffect",
+      "import_path": "react",
+      "dependency_type": "framework",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "useState",
+      "import_path": "react",
+      "dependency_type": "framework",
+      "methods": [],
+      "resolved_path": null,
+      "side_effect_level": "local",
+      "mock_strategy": "manual"
+    },
+    {
+      "name": "getBooks",
+      "import_path": "../api",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "frontend/src/api.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "deleteBook",
+      "import_path": "../api",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "frontend/src/api.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "formatRating",
+      "import_path": "../utils",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "frontend/src/utils.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "validateBook",
+      "import_path": "../utils/validateBook",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/utils/validateBook.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "Book",
+      "import_path": "../models/Book",
+      "dependency_type": "mongoose_model",
+      "methods": [
+        "create",
+        "find",
+        "findById",
+        "findByIdAndDelete",
+        "findByIdAndUpdate"
+      ],
+      "resolved_path": "backend/models/Book.js",
+      "side_effect_level": "database",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "getBooks",
+      "import_path": "../controllers/bookController",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/controllers/bookController.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "getBookById",
+      "import_path": "../controllers/bookController",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/controllers/bookController.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "addBook",
+      "import_path": "../controllers/bookController",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/controllers/bookController.js",
+      "side_effect_level": "database",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "updateBook",
+      "import_path": "../controllers/bookController",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/controllers/bookController.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "deleteBook",
+      "import_path": "../controllers/bookController",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/controllers/bookController.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    },
+    {
+      "name": "bookController",
+      "import_path": "../controllers/bookController",
+      "dependency_type": "local_module",
+      "methods": [],
+      "resolved_path": "backend/controllers/bookController.js",
+      "side_effect_level": "local",
+      "mock_strategy": "module_mock"
+    }
+  ],
+  "call_edges": [
+    {
+      "caller_id": "route:backend\\server.js:GET /api/health:14",
+      "callee": "app.get",
+      "line": 14
+    },
+    {
+      "caller_id": "route:backend\\server.js:GET /api/health:14",
+      "callee": "res.status",
+      "line": 15
+    },
+    {
+      "caller_id": "route:backend\\server.js:GET /api/health:14",
+      "callee": "json",
+      "line": 15
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:getBooks:5",
+      "callee": "getBooks",
+      "line": 5
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:getBooks:5",
+      "callee": "axios.get",
+      "line": 6
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:getBookById:10",
+      "callee": "getBookById",
+      "line": 10
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:getBookById:10",
+      "callee": "axios.get",
+      "line": 11
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:addBook:15",
+      "callee": "addBook",
+      "line": 15
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:addBook:15",
+      "callee": "axios.post",
+      "line": 16
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:updateBook:20",
+      "callee": "updateBook",
+      "line": 20
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:updateBook:20",
+      "callee": "axios.put",
+      "line": 21
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:deleteBook:25",
+      "callee": "deleteBook",
+      "line": 25
+    },
+    {
+      "caller_id": "function:frontend\\src\\api.js:deleteBook:25",
+      "callee": "axios.delete",
+      "line": 26
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:4",
+      "callee": "App",
+      "line": 4
+    },
+    {
+      "caller_id": "component:frontend\\src\\App.jsx:App:4",
+      "callee": "return",
+      "line": 5
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:formatRating:1",
+      "callee": "formatRating",
+      "line": 1
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:formatRating:1",
+      "callee": "Number",
+      "line": 2
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:formatRating:1",
+      "callee": "Number.isNaN",
+      "line": 3
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:formatRating:1",
+      "callee": "Math.min",
+      "line": 6
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:formatRating:1",
+      "callee": "repeat",
+      "line": 7
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:formatRating:1",
+      "callee": "Math.round",
+      "line": 7
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:sortBooksByTitle:10",
+      "callee": "sortBooksByTitle",
+      "line": 10
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:sortBooksByTitle:10",
+      "callee": "Array.isArray",
+      "line": 11
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:sortBooksByTitle:10",
+      "callee": "sort",
+      "line": 12
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:sortBooksByTitle:10",
+      "callee": "title.localeCompare",
+      "line": 12
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:filterUnreadBooks:15",
+      "callee": "filterUnreadBooks",
+      "line": 15
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:filterUnreadBooks:15",
+      "callee": "Array.isArray",
+      "line": 16
+    },
+    {
+      "caller_id": "function:frontend\\src\\utils.js:filterUnreadBooks:15",
+      "callee": "books.filter",
+      "line": 17
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "BookList",
+      "line": 5
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "useState",
+      "line": 6
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "useState",
+      "line": 7
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "useState",
+      "line": 8
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "useEffect",
+      "line": 10
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "getBooks",
+      "line": 11
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "then",
+      "line": 12
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "setBooks",
+      "line": 12
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "setError",
+      "line": 13
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "finally",
+      "line": 14
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "setLoading",
+      "line": 14
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "handleDelete",
+      "line": 17
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "deleteBook",
+      "line": 18
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "setBooks",
+      "line": 19
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "prev.filter",
+      "line": 19
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "return",
+      "line": 25
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "books.map",
+      "line": 27
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "formatRating",
+      "line": 30
+    },
+    {
+      "caller_id": "component:frontend\\src\\components\\BookList.jsx:BookList:5",
+      "callee": "handleDelete",
+      "line": 31
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBooks:4",
+      "callee": "getBooks",
+      "line": 4
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBooks:4",
+      "callee": "Book.find",
+      "line": 13
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBooks:4",
+      "callee": "sort",
+      "line": 13
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBooks:4",
+      "callee": "res.status",
+      "line": 14
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBooks:4",
+      "callee": "json",
+      "line": 14
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBooks:4",
+      "callee": "res.status",
+      "line": 16
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBooks:4",
+      "callee": "json",
+      "line": 16
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBookById:20",
+      "callee": "getBookById",
+      "line": 20
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBookById:20",
+      "callee": "Book.findById",
+      "line": 22
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBookById:20",
+      "callee": "res.status",
+      "line": 24
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBookById:20",
+      "callee": "json",
+      "line": 24
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBookById:20",
+      "callee": "res.status",
+      "line": 26
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBookById:20",
+      "callee": "json",
+      "line": 26
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBookById:20",
+      "callee": "res.status",
+      "line": 28
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:getBookById:20",
+      "callee": "json",
+      "line": 28
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:addBook:32",
+      "callee": "addBook",
+      "line": 32
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:addBook:32",
+      "callee": "validateBook",
+      "line": 33
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:addBook:32",
+      "callee": "res.status",
+      "line": 35
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:addBook:32",
+      "callee": "json",
+      "line": 35
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:addBook:32",
+      "callee": "Book.create",
+      "line": 38
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:addBook:32",
+      "callee": "res.status",
+      "line": 39
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:addBook:32",
+      "callee": "json",
+      "line": 39
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:addBook:32",
+      "callee": "res.status",
+      "line": 41
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:addBook:32",
+      "callee": "json",
+      "line": 41
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "callee": "updateBook",
+      "line": 45
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "callee": "Object.keys",
+      "line": 46
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "callee": "res.status",
+      "line": 47
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "callee": "json",
+      "line": 47
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "callee": "Book.findByIdAndUpdate",
+      "line": 50
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "callee": "res.status",
+      "line": 55
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "callee": "json",
+      "line": 55
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "callee": "res.status",
+      "line": 57
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "callee": "json",
+      "line": 57
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "callee": "res.status",
+      "line": 59
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:updateBook:45",
+      "callee": "json",
+      "line": 59
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+      "callee": "deleteBook",
+      "line": 63
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+      "callee": "Book.findByIdAndDelete",
+      "line": 65
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+      "callee": "res.status",
+      "line": 67
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+      "callee": "json",
+      "line": 67
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+      "callee": "res.status",
+      "line": 69
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+      "callee": "json",
+      "line": 69
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+      "callee": "res.status",
+      "line": 71
+    },
+    {
+      "caller_id": "function:backend\\controllers\\bookController.js:deleteBook:63",
+      "callee": "json",
+      "line": 71
+    },
+    {
+      "caller_id": "model:backend\\models\\Book.js:Book:3",
+      "callee": "mongoose.Schema",
+      "line": 3
+    },
+    {
+      "caller_id": "route:backend\\routes\\bookRoutes.js:GET /:12",
+      "callee": "router.get",
+      "line": 12
+    },
+    {
+      "caller_id": "route:backend\\routes\\bookRoutes.js:GET /:12",
+      "callee": "router.get",
+      "line": 13
+    },
+    {
+      "caller_id": "route:backend\\routes\\bookRoutes.js:GET /:id:13",
+      "callee": "router.get",
+      "line": 13
+    },
+    {
+      "caller_id": "route:backend\\routes\\bookRoutes.js:GET /:id:13",
+      "callee": "router.post",
+      "line": 14
+    },
+    {
+      "caller_id": "route:backend\\routes\\bookRoutes.js:POST /:14",
+      "callee": "router.post",
+      "line": 14
+    },
+    {
+      "caller_id": "route:backend\\routes\\bookRoutes.js:POST /:14",
+      "callee": "router.put",
+      "line": 15
+    },
+    {
+      "caller_id": "route:backend\\routes\\bookRoutes.js:PUT /:id:15",
+      "callee": "router.put",
+      "line": 15
+    },
+    {
+      "caller_id": "route:backend\\routes\\bookRoutes.js:PUT /:id:15",
+      "callee": "router.delete",
+      "line": 16
+    },
+    {
+      "caller_id": "route:backend\\routes\\bookRoutes.js:DELETE /:id:16",
+      "callee": "router.delete",
+      "line": 16
+    },
+    {
+      "caller_id": "function:backend\\utils\\validateBook.js:validateBook:1",
+      "callee": "validateBook",
+      "line": 1
+    },
+    {
+      "caller_id": "function:backend\\utils\\validateBook.js:validateBook:1",
+      "callee": "title.trim",
+      "line": 8
+    },
+    {
+      "caller_id": "function:backend\\utils\\validateBook.js:validateBook:1",
+      "callee": "errors.push",
+      "line": 9
+    },
+    {
+      "caller_id": "function:backend\\utils\\validateBook.js:validateBook:1",
+      "callee": "author.trim",
+      "line": 12
+    },
+    {
+      "caller_id": "function:backend\\utils\\validateBook.js:validateBook:1",
+      "callee": "errors.push",
+      "line": 13
+    },
+    {
+      "caller_id": "function:backend\\utils\\validateBook.js:validateBook:1",
+      "callee": "Number",
+      "line": 17
+    },
+    {
+      "caller_id": "function:backend\\utils\\validateBook.js:validateBook:1",
+      "callee": "Number.isNaN",
+      "line": 18
+    },
+    {
+      "caller_id": "function:backend\\utils\\validateBook.js:validateBook:1",
+      "callee": "errors.push",
+      "line": 19
+    },
+    {
+      "caller_id": "function:backend\\utils\\validateBook.js:validateBook:1",
+      "callee": "errors.push",
+      "line": 24
+    }
+  ],
+  "warnings": []
+}

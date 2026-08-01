@@ -1,0 +1,324 @@
+{
+  "repository_graph_path": "C:\\Users\\vpraf\\OneDrive\\Desktop\\4july\\runs\\repository_graph.json",
+  "specifications": [
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:getTodos:5",
+      "scenario_name": "getTodos performs its expected behavior",
+      "purpose": "Verify getTodos with deterministic inputs and isolated dependencies.",
+      "arrange_steps": [
+        "Mock axios"
+      ],
+      "act_steps": [
+        "Invoke getTodos"
+      ],
+      "expected_behavior": "The observable result matches the source-defined behavior.",
+      "required_mocks": [
+        "axios"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:createTodo:7",
+      "scenario_name": "createTodo performs its expected behavior",
+      "purpose": "Verify createTodo with deterministic inputs and isolated dependencies.",
+      "arrange_steps": [
+        "Mock axios"
+      ],
+      "act_steps": [
+        "Invoke createTodo"
+      ],
+      "expected_behavior": "The observable result matches the source-defined behavior.",
+      "required_mocks": [
+        "axios"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:updateTodo:9",
+      "scenario_name": "updateTodo performs its expected behavior",
+      "purpose": "Verify updateTodo with deterministic inputs and isolated dependencies.",
+      "arrange_steps": [
+        "Mock axios"
+      ],
+      "act_steps": [
+        "Invoke updateTodo"
+      ],
+      "expected_behavior": "The observable result matches the source-defined behavior.",
+      "required_mocks": [
+        "axios"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "function:frontend\\src\\api.js:deleteTodo:11",
+      "scenario_name": "deleteTodo performs its expected behavior",
+      "purpose": "Verify deleteTodo with deterministic inputs and isolated dependencies.",
+      "arrange_steps": [
+        "Mock axios"
+      ],
+      "act_steps": [
+        "Invoke deleteTodo"
+      ],
+      "expected_behavior": "The observable result matches the source-defined behavior.",
+      "required_mocks": [
+        "axios"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "component:frontend\\src\\App.jsx:App:6",
+      "scenario_name": "App renders its primary state",
+      "purpose": "Verify App through rendered user-visible behavior.",
+      "arrange_steps": [
+        "Mock useEffect",
+        "Mock useState",
+        "Mock TodoForm",
+        "Mock TodoList",
+        "Mock getTodos",
+        "Mock createTodo",
+        "Mock updateTodo",
+        "Mock deleteTodo",
+        "Render the component with required providers mocked"
+      ],
+      "act_steps": [
+        "Render the component",
+        "Trigger the relevant user interaction if needed"
+      ],
+      "expected_behavior": "The user-visible output matches the source-defined behavior.",
+      "required_mocks": [
+        "useEffect",
+        "useState",
+        "TodoForm",
+        "TodoList",
+        "getTodos",
+        "createTodo",
+        "updateTodo",
+        "deleteTodo"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "component:frontend\\src\\components\\TodoForm.jsx:TodoForm:3",
+      "scenario_name": "TodoForm renders its primary state",
+      "purpose": "Verify TodoForm through rendered user-visible behavior.",
+      "arrange_steps": [
+        "Mock useState",
+        "Render the component with required providers mocked"
+      ],
+      "act_steps": [
+        "Render the component",
+        "Trigger the relevant user interaction if needed"
+      ],
+      "expected_behavior": "The user-visible output matches the source-defined behavior.",
+      "required_mocks": [
+        "useState"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "component:frontend\\src\\components\\TodoItem.jsx:TodoItem:1",
+      "scenario_name": "TodoItem renders its primary state",
+      "purpose": "Verify TodoItem through rendered user-visible behavior.",
+      "arrange_steps": [
+        "Render the component with required providers mocked"
+      ],
+      "act_steps": [
+        "Render the component",
+        "Trigger the relevant user interaction if needed"
+      ],
+      "expected_behavior": "The user-visible output matches the source-defined behavior.",
+      "required_mocks": [],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "component:frontend\\src\\components\\TodoList.jsx:TodoList:3",
+      "scenario_name": "TodoList renders its primary state",
+      "purpose": "Verify TodoList through rendered user-visible behavior.",
+      "arrange_steps": [
+        "Mock TodoItem",
+        "Render the component with required providers mocked"
+      ],
+      "act_steps": [
+        "Render the component",
+        "Trigger the relevant user interaction if needed"
+      ],
+      "expected_behavior": "The user-visible output matches the source-defined behavior.",
+      "required_mocks": [
+        "TodoItem"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "function:backend\\config\\db.js:connectDB:3",
+      "scenario_name": "connectDB performs its expected behavior",
+      "purpose": "Verify connectDB with deterministic inputs and isolated dependencies.",
+      "arrange_steps": [
+        "Mock mongoose",
+        "Mock process.env"
+      ],
+      "act_steps": [
+        "Invoke connectDB"
+      ],
+      "expected_behavior": "The observable result matches the source-defined behavior.",
+      "required_mocks": [
+        "mongoose",
+        "process.env"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\todoController.js:getTodos:4",
+      "scenario_name": "getTodos performs its expected behavior",
+      "purpose": "Verify getTodos with deterministic inputs and isolated dependencies.",
+      "arrange_steps": [
+        "Mock Todo"
+      ],
+      "act_steps": [
+        "Invoke getTodos"
+      ],
+      "expected_behavior": "The observable result matches the source-defined behavior.",
+      "required_mocks": [
+        "Todo"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\todoController.js:createTodo:10",
+      "scenario_name": "createTodo performs its expected behavior",
+      "purpose": "Verify createTodo with deterministic inputs and isolated dependencies.",
+      "arrange_steps": [
+        "Mock Todo"
+      ],
+      "act_steps": [
+        "Invoke createTodo"
+      ],
+      "expected_behavior": "The observable result matches the source-defined behavior.",
+      "required_mocks": [
+        "Todo"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\todoController.js:updateTodo:20",
+      "scenario_name": "updateTodo performs its expected behavior",
+      "purpose": "Verify updateTodo with deterministic inputs and isolated dependencies.",
+      "arrange_steps": [
+        "Mock Todo"
+      ],
+      "act_steps": [
+        "Invoke updateTodo"
+      ],
+      "expected_behavior": "The observable result matches the source-defined behavior.",
+      "required_mocks": [
+        "Todo"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "function:backend\\controllers\\todoController.js:deleteTodo:30",
+      "scenario_name": "deleteTodo performs its expected behavior",
+      "purpose": "Verify deleteTodo with deterministic inputs and isolated dependencies.",
+      "arrange_steps": [
+        "Mock Todo"
+      ],
+      "act_steps": [
+        "Invoke deleteTodo"
+      ],
+      "expected_behavior": "The observable result matches the source-defined behavior.",
+      "required_mocks": [
+        "Todo"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "target_unit_id": "model:backend\\models\\Todo.js:Todo:3",
+      "scenario_name": "Todo performs its expected behavior",
+      "purpose": "Verify Todo schema behavior without connecting to a live database.",
+      "arrange_steps": [
+        "Mock mongoose"
+      ],
+      "act_steps": [
+        "Invoke Todo"
+      ],
+      "expected_behavior": "The observable result matches the source-defined behavior.",
+      "required_mocks": [
+        "mongoose"
+      ],
+      "priority": "High"
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\todoRoutes.js:GET /:10",
+      "scenario_name": "GET / routes requests through isolated handlers",
+      "purpose": "Verify GET / without live network, database, or auth side effects.",
+      "arrange_steps": [
+        "Mock getTodos",
+        "Mock createTodo",
+        "Mount the router on an isolated Express app"
+      ],
+      "act_steps": [
+        "Send a request through Supertest"
+      ],
+      "expected_behavior": "The unit sends the expected status and JSON response while using mocked dependencies.",
+      "required_mocks": [
+        "getTodos",
+        "createTodo"
+      ],
+      "priority": "High"
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\todoRoutes.js:POST /:11",
+      "scenario_name": "POST / routes requests through isolated handlers",
+      "purpose": "Verify POST / without live network, database, or auth side effects.",
+      "arrange_steps": [
+        "Mock createTodo",
+        "Mock updateTodo",
+        "Mount the router on an isolated Express app"
+      ],
+      "act_steps": [
+        "Send a request through Supertest"
+      ],
+      "expected_behavior": "The unit sends the expected status and JSON response while using mocked dependencies.",
+      "required_mocks": [
+        "createTodo",
+        "updateTodo"
+      ],
+      "priority": "High"
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\todoRoutes.js:PUT /:id:12",
+      "scenario_name": "PUT /:id routes requests through isolated handlers",
+      "purpose": "Verify PUT /:id without live network, database, or auth side effects.",
+      "arrange_steps": [
+        "Mock updateTodo",
+        "Mock deleteTodo",
+        "Mount the router on an isolated Express app"
+      ],
+      "act_steps": [
+        "Send a request through Supertest"
+      ],
+      "expected_behavior": "The unit sends the expected status and JSON response while using mocked dependencies.",
+      "required_mocks": [
+        "updateTodo",
+        "deleteTodo"
+      ],
+      "priority": "High"
+    },
+    {
+      "target_unit_id": "route:backend\\routes\\todoRoutes.js:DELETE /:id:13",
+      "scenario_name": "DELETE /:id routes requests through isolated handlers",
+      "purpose": "Verify DELETE /:id without live network, database, or auth side effects.",
+      "arrange_steps": [
+        "Mock deleteTodo",
+        "Mount the router on an isolated Express app"
+      ],
+      "act_steps": [
+        "Send a request through Supertest"
+      ],
+      "expected_behavior": "The unit sends the expected status and JSON response while using mocked dependencies.",
+      "required_mocks": [
+        "deleteTodo"
+      ],
+      "priority": "High"
+    }
+  ]
+}
